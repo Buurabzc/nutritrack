@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NutriTrack — Öğün Ekleme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #090D0B; --s1: #111812; --s2: #182018; --s3: #1E2A1F;
+    --lime: #C8F076; --lime-d: #8FB84D; --lime-bg: rgba(200,240,118,0.10);
+    --text: #EEE9DC; --t2: #8A9488; --t3: #4A5449;
+    --bd: rgba(255,255,255,0.07); --bd2: rgba(255,255,255,0.12);
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+  /* Topbar */
+  .topbar { display: flex; align-items: center; gap: 10px; padding: 0 20px; height: 52px; border-bottom: 1px solid var(--bd); flex-shrink: 0; }
+  .tb-title { font-family: var(--serif); font-size: 16px; letter-spacing: -.02em; }
+  .tb-sub { font-size: 11px; color: var(--t3); }
+  .tb-sp { flex: 1; }
+  .chip { font-size: 11px; font-weight: 500; padding: 5px 12px; border-radius: 99px; border: 1px solid var(--bd2); color: var(--t2); background: transparent; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+  .chip svg { width: 13px; height: 13px; }
+
+  /* Layout */
+  .body { display: flex; flex: 1; overflow: hidden; }
+  .sidebar { width: 60px; background: var(--s1); border-right: 1px solid var(--bd); display: flex; flex-direction: column; align-items: center; padding: 16px 0; gap: 4px; flex-shrink: 0; }
+  .logo { width: 34px; height: 34px; background: var(--lime); border-radius: 9px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+  .logo svg { width: 18px; height: 18px; }
+  .ni { width: 38px; height: 38px; border-radius: 9px; display: flex; align-items: center; justify-content: center; color: var(--t3); cursor: pointer; position: relative; }
+  .ni svg { width: 18px; height: 18px; }
+  .ni:hover { background: var(--s2); color: var(--t2); }
+  .ni.act { background: var(--lime-bg); color: var(--lime); }
+  .ni.act::before { content: ''; position: absolute; left: -1px; top: 50%; transform: translateY(-50%); width: 3px; height: 16px; background: var(--lime); border-radius: 0 3px 3px 0; }
+  .ni-sp { flex: 1; }
+
+  /* Search panel */
+  .search-panel { width: 270px; border-right: 1px solid var(--bd); display: flex; flex-direction: column; flex-shrink: 0; }
+  .search-top { padding: 14px; border-bottom: 1px solid var(--bd); }
+  .search-box { width: 100%; background: var(--s2); border: 1px solid var(--bd2); border-radius: 9px; padding: 8px 12px; display: flex; align-items: center; gap: 8px; }
+  .search-box svg { width: 15px; height: 15px; color: var(--t3); flex-shrink: 0; }
+  .search-box input { background: transparent; border: none; outline: none; font-size: 13px; color: var(--text); flex: 1; font-family: var(--sans); }
+  .search-box input::placeholder { color: var(--t3); }
+  .cat-row { display: flex; gap: 6px; padding: 10px 14px; border-bottom: 1px solid var(--bd); flex-wrap: wrap; }
+  .cat-pill { font-size: 10px; font-weight: 500; padding: 3px 9px; border-radius: 99px; border: 1px solid var(--bd2); color: var(--t3); cursor: pointer; }
+  .cat-pill.act { border-color: var(--lime-d); background: var(--lime-bg); color: var(--lime); }
+  .food-list { flex: 1; overflow-y: auto; padding: 8px 0; scrollbar-width: none; }
+  .food-list::-webkit-scrollbar { display: none; }
+  .food-item { display: flex; align-items: center; gap: 10px; padding: 9px 14px; cursor: pointer; transition: background .12s; }
+  .food-item:hover, .food-item.sel { background: var(--s2); }
+  .food-item.sel .food-name { color: var(--lime); }
+  .food-icon { width: 32px; height: 32px; border-radius: 8px; background: var(--s3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .food-icon svg { width: 16px; height: 16px; color: var(--t2); }
+  .food-info { flex: 1; min-width: 0; }
+  .food-name { font-size: 12px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .food-macro { font-size: 10px; color: var(--t3); margin-top: 2px; }
+  .food-kcal { font-size: 12px; font-weight: 500; color: var(--t2); flex-shrink: 0; }
+
+  /* Detail panel */
+  .detail-panel { flex: 1; display: flex; flex-direction: column; padding: 24px; overflow-y: auto; }
+  .detail-name { font-family: var(--serif); font-size: 26px; letter-spacing: -.02em; color: var(--text); margin-bottom: 4px; }
+  .detail-sub { font-size: 11px; color: var(--t3); margin-bottom: 24px; }
+  .sec-label { font-size: 10px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; color: var(--t3); margin-bottom: 10px; }
+
+  .portion-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .port-btn { width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--bd2); background: var(--s2); color: var(--text); display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; }
+  .port-btn svg { width: 16px; height: 16px; }
+  .port-val { flex: 1; background: var(--s2); border: 1px solid var(--bd2); border-radius: 9px; padding: 8px 12px; font-size: 28px; font-family: var(--serif); color: var(--lime); text-align: center; letter-spacing: -.03em; }
+  .port-unit { font-size: 12px; color: var(--t3); }
+
+  .unit-tabs { display: flex; gap: 6px; margin-bottom: 24px; }
+  .unit-tab { font-size: 11px; padding: 4px 14px; border-radius: 99px; border: 1px solid var(--bd2); color: var(--t3); cursor: pointer; }
+  .unit-tab.act { background: var(--s3); border-color: var(--lime-d); color: var(--lime); }
+
+  .macro-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 24px; }
+  .mp { background: var(--s2); border-radius: 10px; padding: 12px; border: 1px solid var(--bd); }
+  .mp-l { font-size: 9px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--t3); margin-bottom: 5px; }
+  .mp-v { font-family: var(--serif); font-size: 24px; line-height: 1; letter-spacing: -.02em; color: var(--text); }
+  .mp-u { font-size: 10px; color: var(--t3); font-family: var(--sans); }
+  .mp.hl .mp-v { color: var(--lime); }
+
+  .meal-type-row { display: flex; gap: 8px; margin-bottom: 24px; }
+  .mt { flex: 1; padding: 10px 6px; border-radius: 9px; border: 1px solid var(--bd2); font-size: 11px; color: var(--t3); cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .mt svg { width: 18px; height: 18px; }
+  .mt.act { background: var(--lime-bg); border-color: var(--lime-d); color: var(--lime); }
+
+  .sp { flex: 1; }
+  .confirm-btn { width: 100%; padding: 12px; border-radius: 10px; background: var(--lime); color: #080C0A; font-size: 13px; font-weight: 600; font-family: var(--sans); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .confirm-btn svg { width: 16px; height: 16px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="tb-title">Öğün Ekle</span>
+  <span class="tb-sub">— Bugün, Öğle yemeği</span>
+  <div class="tb-sp"></div>
+  <button class="chip">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    Kapat
+  </button>
+</div>
+
+<div class="body">
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="logo">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M10 2C6.5 2 4 5 4 8.5c0 4 3 7 6 9.5 3-2.5 6-5.5 6-9.5C16 5 13.5 2 10 2z" fill="#080C0A"/><path d="M10 6v8M7 9l3-3 3 3" stroke="#080C0A" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </div>
+    <div class="ni">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    </div>
+    <div class="ni act">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2a7 7 0 017 7H5a7 7 0 017-7z"/><path d="M5 9v2a7 7 0 0014 0V9"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="9" y1="22" x2="15" y2="22"/></svg>
+    </div>
+    <div class="ni">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
+    </div>
+    <div class="ni">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2a8 8 0 018 8c0 3-1.5 5.5-4 7l-4 5-4-5C5.5 15.5 4 13 4 10a8 8 0 018-8z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    </div>
+    <div class="ni-sp"></div>
+    <div class="ni">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+    </div>
+  </nav>
+
+  <!-- Search panel -->
+  <div class="search-panel">
+    <div class="search-top">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" value="tavuk" placeholder="Besin ara...">
+      </div>
+    </div>
+    <div class="cat-row">
+      <div class="cat-pill act">Tümü</div>
+      <div class="cat-pill">Protein</div>
+      <div class="cat-pill">Sebze</div>
+      <div class="cat-pill">Tahıl</div>
+      <div class="cat-pill">Süt</div>
+    </div>
+    <div class="food-list">
+      <div class="food-item sel">
+        <div class="food-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 3h10l2 6H5L7 3z"/><path d="M5 9c0 7 2 10 7 12 5-2 7-5 7-12"/></svg></div>
+        <div class="food-info"><div class="food-name">Tavuk göğsü (haşlama)</div><div class="food-macro">P: 31g · K: 0g · Y: 3.6g</div></div>
+        <div class="food-kcal">165</div>
+      </div>
+      <div class="food-item">
+        <div class="food-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 3h10l2 6H5L7 3z"/><path d="M5 9c0 7 2 10 7 12 5-2 7-5 7-12"/></svg></div>
+        <div class="food-info"><div class="food-name">Tavuk but (fırın)</div><div class="food-macro">P: 26g · K: 0g · Y: 9g</div></div>
+        <div class="food-kcal">198</div>
+      </div>
+      <div class="food-item">
+        <div class="food-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 3h10l2 6H5L7 3z"/><path d="M5 9c0 7 2 10 7 12 5-2 7-5 7-12"/></svg></div>
+        <div class="food-info"><div class="food-name">Tavuk döner</div><div class="food-macro">P: 22g · K: 4g · Y: 12g</div></div>
+        <div class="food-kcal">212</div>
+      </div>
+      <div class="food-item">
+        <div class="food-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2a7 7 0 017 7H5a7 7 0 017-7z"/><path d="M5 9v2a7 7 0 0014 0V9"/></svg></div>
+        <div class="food-info"><div class="food-name">Tavuk çorbası</div><div class="food-macro">P: 8g · K: 10g · Y: 4g</div></div>
+        <div class="food-kcal">110</div>
+      </div>
+      <div class="food-item">
+        <div class="food-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 3h10l2 6H5L7 3z"/><path d="M5 9c0 7 2 10 7 12 5-2 7-5 7-12"/></svg></div>
+        <div class="food-info"><div class="food-name">Tavuk kanat (ızgara)</div><div class="food-macro">P: 27g · K: 0g · Y: 14g</div></div>
+        <div class="food-kcal">240</div>
+      </div>
+      <div class="food-item">
+        <div class="food-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 3h10l2 6H5L7 3z"/><path d="M5 9c0 7 2 10 7 12 5-2 7-5 7-12"/></svg></div>
+        <div class="food-info"><div class="food-name">Izgara tavuk (bütün)</div><div class="food-macro">P: 29g · K: 0g · Y: 7g</div></div>
+        <div class="food-kcal">185</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail panel -->
+  <div class="detail-panel">
+    <div class="detail-name">Tavuk göğsü</div>
+    <div class="detail-sub">Haşlama · 100g başına 165 kcal</div>
+
+    <div class="sec-label">Miktar</div>
+    <div class="portion-row">
+      <div class="port-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+      <div class="port-val">150</div>
+      <div class="port-unit">gram</div>
+      <div class="port-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+    </div>
+    <div class="unit-tabs">
+      <div class="unit-tab act">gram</div>
+      <div class="unit-tab">porsiyon</div>
+      <div class="unit-tab">adet</div>
+    </div>
+
+    <div class="sec-label">Besin değerleri — 150g</div>
+    <div class="macro-grid">
+      <div class="mp hl"><div class="mp-l">Kalori</div><div class="mp-v">248</div><div class="mp-u">kcal</div></div>
+      <div class="mp"><div class="mp-l">Protein</div><div class="mp-v">46</div><div class="mp-u">g</div></div>
+      <div class="mp"><div class="mp-l">Karb</div><div class="mp-v">0</div><div class="mp-u">g</div></div>
+      <div class="mp"><div class="mp-l">Yağ</div><div class="mp-v">5.4</div><div class="mp-u">g</div></div>
+    </div>
+
+    <div class="sec-label">Öğün tipi</div>
+    <div class="meal-type-row">
+      <div class="mt">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+        Kahvaltı
+      </div>
+      <div class="mt act">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Öğle
+      </div>
+      <div class="mt">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        Akşam
+      </div>
+      <div class="mt">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Atıştırma
+      </div>
+    </div>
+
+    <div class="sp"></div>
+    <button class="confirm-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      Öğüne ekle — 248 kcal
+    </button>
+  </div>
+</div>
+
+</body>
+</html>

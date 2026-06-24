@@ -1,0 +1,6692 @@
+[
+  {
+    "id": "yumurta_haslanmis",
+    "name": "Yumurta (haşlanmış)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 155,
+      "protein": 13.0,
+      "carbs": 1.1,
+      "fat": 11.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "yumurta_sahanda",
+    "name": "Yumurta (sahanda)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 196,
+      "protein": 13.6,
+      "carbs": 0.4,
+      "fat": 15.5,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "tavuk_gogsu_haslamis",
+    "name": "Tavuk göğsü (haşlama)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 165,
+      "protein": 31.0,
+      "carbs": 0,
+      "fat": 3.6,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "tavuk_but_firin",
+    "name": "Tavuk but (fırın)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 198,
+      "protein": 26.0,
+      "carbs": 0,
+      "fat": 9.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "tavuk_doener",
+    "name": "Tavuk döner",
+    "category": "protein",
+    "per_100g": {
+      "calories": 212,
+      "protein": 22.0,
+      "carbs": 4.0,
+      "fat": 12.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "tavuk_kanat_izgara",
+    "name": "Tavuk kanat (ızgara)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 240,
+      "protein": 27.0,
+      "carbs": 0,
+      "fat": 14.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "kiyma_dana",
+    "name": "Kıyma (dana)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 250,
+      "protein": 26.0,
+      "carbs": 0,
+      "fat": 16.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "kofte_izgara",
+    "name": "Köfte (ızgara)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 245,
+      "protein": 21.0,
+      "carbs": 5.0,
+      "fat": 15.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "somon_izgara",
+    "name": "Somon (ızgara)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 208,
+      "protein": 28.0,
+      "carbs": 0,
+      "fat": 10.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "ton_balik_konserve",
+    "name": "Ton balığı (konserve, suda)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 116,
+      "protein": 26.0,
+      "carbs": 0,
+      "fat": 1.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "beyaz_peynir",
+    "name": "Beyaz peynir",
+    "category": "sut",
+    "per_100g": {
+      "calories": 267,
+      "protein": 18.0,
+      "carbs": 2.0,
+      "fat": 21.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "kasar_peynir",
+    "name": "Kaşar peynir",
+    "category": "sut",
+    "per_100g": {
+      "calories": 356,
+      "protein": 23.0,
+      "carbs": 2.5,
+      "fat": 28.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "yogurt_tam_yag",
+    "name": "Yoğurt (tam yağlı)",
+    "category": "sut",
+    "per_100g": {
+      "calories": 61,
+      "protein": 3.5,
+      "carbs": 4.7,
+      "fat": 3.3,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "suzme_yogurt",
+    "name": "Süzme yoğurt",
+    "category": "sut",
+    "per_100g": {
+      "calories": 97,
+      "protein": 9.0,
+      "carbs": 4.0,
+      "fat": 5.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "sut_tam_yag",
+    "name": "Süt (tam yağlı)",
+    "category": "sut",
+    "per_100g": {
+      "calories": 61,
+      "protein": 3.2,
+      "carbs": 4.8,
+      "fat": 3.3,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "bulgur_pilavi",
+    "name": "Bulgur pilavı (pişmiş)",
+    "category": "tahil",
+    "per_100g": {
+      "calories": 150,
+      "protein": 4.5,
+      "carbs": 30.0,
+      "fat": 1.5,
+      "fiber": 4.5
+    }
+  },
+  {
+    "id": "pirinc_pilavi",
+    "name": "Pirinç pilavı (pişmiş)",
+    "category": "tahil",
+    "per_100g": {
+      "calories": 130,
+      "protein": 2.7,
+      "carbs": 28.0,
+      "fat": 0.3,
+      "fiber": 0.4
+    }
+  },
+  {
+    "id": "makarna_pismis",
+    "name": "Makarna (pişmiş)",
+    "category": "tahil",
+    "per_100g": {
+      "calories": 158,
+      "protein": 5.8,
+      "carbs": 31.0,
+      "fat": 0.9,
+      "fiber": 1.8
+    }
+  },
+  {
+    "id": "ekmek_tam_bugday",
+    "name": "Ekmek (tam buğday)",
+    "category": "tahil",
+    "per_100g": {
+      "calories": 247,
+      "protein": 9.0,
+      "carbs": 41.0,
+      "fat": 3.5,
+      "fiber": 7.0
+    }
+  },
+  {
+    "id": "ekmek_beyaz",
+    "name": "Ekmek (beyaz)",
+    "category": "tahil",
+    "per_100g": {
+      "calories": 265,
+      "protein": 9.0,
+      "carbs": 50.0,
+      "fat": 3.2,
+      "fiber": 2.7
+    }
+  },
+  {
+    "id": "yulaf_ezmesi",
+    "name": "Yulaf ezmesi (pişmiş)",
+    "category": "tahil",
+    "per_100g": {
+      "calories": 71,
+      "protein": 2.5,
+      "carbs": 12.0,
+      "fat": 1.5,
+      "fiber": 1.7
+    }
+  },
+  {
+    "id": "mercimek_kirmizi_pismis",
+    "name": "Kırmızı mercimek (pişmiş)",
+    "category": "baklagil",
+    "per_100g": {
+      "calories": 116,
+      "protein": 9.0,
+      "carbs": 20.0,
+      "fat": 0.4,
+      "fiber": 7.9
+    }
+  },
+  {
+    "id": "mercimek_yesil_pismis",
+    "name": "Yeşil mercimek (pişmiş)",
+    "category": "baklagil",
+    "per_100g": {
+      "calories": 116,
+      "protein": 9.0,
+      "carbs": 20.0,
+      "fat": 0.4,
+      "fiber": 7.9
+    }
+  },
+  {
+    "id": "nohut_pismis",
+    "name": "Nohut (pişmiş)",
+    "category": "baklagil",
+    "per_100g": {
+      "calories": 164,
+      "protein": 8.9,
+      "carbs": 27.0,
+      "fat": 2.6,
+      "fiber": 7.6
+    }
+  },
+  {
+    "id": "kuru_fasulye_pismis",
+    "name": "Kuru fasulye (pişmiş)",
+    "category": "baklagil",
+    "per_100g": {
+      "calories": 127,
+      "protein": 8.7,
+      "carbs": 22.8,
+      "fat": 0.5,
+      "fiber": 6.4
+    }
+  },
+  {
+    "id": "domates",
+    "name": "Domates",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 18,
+      "protein": 0.9,
+      "carbs": 3.9,
+      "fat": 0.2,
+      "fiber": 1.2
+    }
+  },
+  {
+    "id": "salgam_turp",
+    "name": "Salatalık",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 15,
+      "protein": 0.7,
+      "carbs": 3.6,
+      "fat": 0.1,
+      "fiber": 0.5
+    }
+  },
+  {
+    "id": "ispanak",
+    "name": "Ispanak",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 23,
+      "protein": 2.9,
+      "carbs": 3.6,
+      "fat": 0.4,
+      "fiber": 2.2
+    }
+  },
+  {
+    "id": "brokoli",
+    "name": "Brokoli",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 34,
+      "protein": 2.8,
+      "carbs": 6.6,
+      "fat": 0.4,
+      "fiber": 2.6
+    }
+  },
+  {
+    "id": "kabak",
+    "name": "Kabak (pişmiş)",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 17,
+      "protein": 1.2,
+      "carbs": 3.5,
+      "fat": 0.2,
+      "fiber": 1.0
+    }
+  },
+  {
+    "id": "havuc",
+    "name": "Havuç",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 41,
+      "protein": 0.9,
+      "carbs": 9.6,
+      "fat": 0.2,
+      "fiber": 2.8
+    }
+  },
+  {
+    "id": "patlican",
+    "name": "Patlıcan (pişmiş)",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 35,
+      "protein": 0.8,
+      "carbs": 8.7,
+      "fat": 0.2,
+      "fiber": 2.5
+    }
+  },
+  {
+    "id": "biber_dolma",
+    "name": "Biber dolma (etli)",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 115,
+      "protein": 7.0,
+      "carbs": 10.0,
+      "fat": 5.0,
+      "fiber": 1.5
+    }
+  },
+  {
+    "id": "elma",
+    "name": "Elma",
+    "category": "meyve",
+    "per_100g": {
+      "calories": 52,
+      "protein": 0.3,
+      "carbs": 14.0,
+      "fat": 0.2,
+      "fiber": 2.4
+    }
+  },
+  {
+    "id": "muz",
+    "name": "Muz",
+    "category": "meyve",
+    "per_100g": {
+      "calories": 89,
+      "protein": 1.1,
+      "carbs": 23.0,
+      "fat": 0.3,
+      "fiber": 2.6
+    }
+  },
+  {
+    "id": "portakal",
+    "name": "Portakal",
+    "category": "meyve",
+    "per_100g": {
+      "calories": 47,
+      "protein": 0.9,
+      "carbs": 12.0,
+      "fat": 0.1,
+      "fiber": 2.4
+    }
+  },
+  {
+    "id": "uzum",
+    "name": "Üzüm",
+    "category": "meyve",
+    "per_100g": {
+      "calories": 69,
+      "protein": 0.7,
+      "carbs": 18.0,
+      "fat": 0.2,
+      "fiber": 0.9
+    }
+  },
+  {
+    "id": "karpuz",
+    "name": "Karpuz",
+    "category": "meyve",
+    "per_100g": {
+      "calories": 30,
+      "protein": 0.6,
+      "carbs": 7.6,
+      "fat": 0.2,
+      "fiber": 0.4
+    }
+  },
+  {
+    "id": "cilek",
+    "name": "Çilek",
+    "category": "meyve",
+    "per_100g": {
+      "calories": 32,
+      "protein": 0.7,
+      "carbs": 7.7,
+      "fat": 0.3,
+      "fiber": 2.0
+    }
+  },
+  {
+    "id": "ceviz",
+    "name": "Ceviz",
+    "category": "kuruyemis",
+    "per_100g": {
+      "calories": 654,
+      "protein": 15.0,
+      "carbs": 14.0,
+      "fat": 65.0,
+      "fiber": 6.7
+    }
+  },
+  {
+    "id": "badem",
+    "name": "Badem",
+    "category": "kuruyemis",
+    "per_100g": {
+      "calories": 579,
+      "protein": 21.0,
+      "carbs": 22.0,
+      "fat": 50.0,
+      "fiber": 12.5
+    }
+  },
+  {
+    "id": "findik",
+    "name": "Fındık",
+    "category": "kuruyemis",
+    "per_100g": {
+      "calories": 628,
+      "protein": 15.0,
+      "carbs": 17.0,
+      "fat": 61.0,
+      "fiber": 9.7
+    }
+  },
+  {
+    "id": "yer_fistigi",
+    "name": "Yer fıstığı",
+    "category": "kuruyemis",
+    "per_100g": {
+      "calories": 567,
+      "protein": 26.0,
+      "carbs": 16.0,
+      "fat": 49.0,
+      "fiber": 8.5
+    }
+  },
+  {
+    "id": "zeytinyagi",
+    "name": "Zeytinyağı",
+    "category": "yag",
+    "per_100g": {
+      "calories": 884,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 100.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "tereyagi",
+    "name": "Tereyağı",
+    "category": "yag",
+    "per_100g": {
+      "calories": 717,
+      "protein": 0.9,
+      "carbs": 0.1,
+      "fat": 81.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "mercimek_corbasi",
+    "name": "Mercimek çorbası",
+    "category": "corba",
+    "per_100g": {
+      "calories": 62,
+      "protein": 3.8,
+      "carbs": 9.5,
+      "fat": 1.2,
+      "fiber": 2.5
+    }
+  },
+  {
+    "id": "ezogelin_corbasi",
+    "name": "Ezogelin çorbası",
+    "category": "corba",
+    "per_100g": {
+      "calories": 68,
+      "protein": 3.5,
+      "carbs": 11.0,
+      "fat": 1.5,
+      "fiber": 2.8
+    }
+  },
+  {
+    "id": "yayla_corbasi",
+    "name": "Yayla çorbası",
+    "category": "corba",
+    "per_100g": {
+      "calories": 55,
+      "protein": 3.0,
+      "carbs": 7.0,
+      "fat": 1.8,
+      "fiber": 0.5
+    }
+  },
+  {
+    "id": "lahmacun",
+    "name": "Lahmacun (1 adet ~120g)",
+    "category": "hazir",
+    "per_100g": {
+      "calories": 282,
+      "protein": 12.0,
+      "carbs": 35.0,
+      "fat": 10.0,
+      "fiber": 2.0
+    }
+  },
+  {
+    "id": "borek_su",
+    "name": "Börek (su böreği)",
+    "category": "hazir",
+    "per_100g": {
+      "calories": 280,
+      "protein": 9.0,
+      "carbs": 32.0,
+      "fat": 13.0,
+      "fiber": 1.0
+    }
+  },
+  {
+    "id": "gozleme_peynirli",
+    "name": "Gözleme (peynirli)",
+    "category": "hazir",
+    "per_100g": {
+      "calories": 250,
+      "protein": 10.0,
+      "carbs": 30.0,
+      "fat": 10.0,
+      "fiber": 1.5
+    }
+  },
+  {
+    "id": "ayran",
+    "name": "Ayran",
+    "category": "icecek",
+    "per_100g": {
+      "calories": 36,
+      "protein": 2.5,
+      "carbs": 2.5,
+      "fat": 1.5,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "cay_sade",
+    "name": "Çay (sade)",
+    "category": "icecek",
+    "per_100g": {
+      "calories": 1,
+      "protein": 0.1,
+      "carbs": 0.2,
+      "fat": 0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "kahve_sade",
+    "name": "Kahve (sade, filtre)",
+    "category": "icecek",
+    "per_100g": {
+      "calories": 2,
+      "protein": 0.3,
+      "carbs": 0.2,
+      "fat": 0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "bal",
+    "name": "Bal",
+    "category": "diger",
+    "per_100g": {
+      "calories": 304,
+      "protein": 0.3,
+      "carbs": 82.0,
+      "fat": 0,
+      "fiber": 0.2
+    }
+  },
+  {
+    "id": "zeytin_siyah",
+    "name": "Zeytin (siyah)",
+    "category": "diger",
+    "per_100g": {
+      "calories": 115,
+      "protein": 0.8,
+      "carbs": 6.3,
+      "fat": 10.7,
+      "fiber": 3.2
+    }
+  },
+  {
+    "id": "zeytin_yesil",
+    "name": "Zeytin (yeşil)",
+    "category": "diger",
+    "per_100g": {
+      "calories": 145,
+      "protein": 1.0,
+      "carbs": 3.8,
+      "fat": 15.3,
+      "fiber": 3.3
+    }
+  },
+  {
+    "id": "humus",
+    "name": "Humus",
+    "category": "diger",
+    "per_100g": {
+      "calories": 166,
+      "protein": 7.9,
+      "carbs": 14.3,
+      "fat": 9.6,
+      "fiber": 6.0
+    }
+  },
+  {
+    "id": "cacik",
+    "name": "Cacık",
+    "category": "diger",
+    "per_100g": {
+      "calories": 50,
+      "protein": 2.5,
+      "carbs": 3.5,
+      "fat": 2.8,
+      "fiber": 0.3
+    }
+  },
+  {
+    "id": "pilaki_fasulye",
+    "name": "Fasulye pilaki",
+    "category": "diger",
+    "per_100g": {
+      "calories": 120,
+      "protein": 5.5,
+      "carbs": 18.0,
+      "fat": 3.0,
+      "fiber": 4.5
+    }
+  },
+  {
+    "id": "patates_haslama",
+    "name": "Patates (haşlama)",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 87,
+      "protein": 1.9,
+      "carbs": 20.0,
+      "fat": 0.1,
+      "fiber": 1.8
+    }
+  },
+  {
+    "id": "patates_kizartma",
+    "name": "Patates kızartması",
+    "category": "hazir",
+    "per_100g": {
+      "calories": 312,
+      "protein": 3.4,
+      "carbs": 41.0,
+      "fat": 15.0,
+      "fiber": 3.8
+    }
+  },
+  {
+    "id": "mantar",
+    "name": "Mantar",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 22,
+      "protein": 3.1,
+      "carbs": 3.3,
+      "fat": 0.3,
+      "fiber": 1.0
+    }
+  },
+  {
+    "id": "sogan",
+    "name": "Soğan",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 40,
+      "protein": 1.1,
+      "carbs": 9.3,
+      "fat": 0.1,
+      "fiber": 1.7
+    }
+  },
+  {
+    "id": "sarimsak",
+    "name": "Sarımsak",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 149,
+      "protein": 6.4,
+      "carbs": 33.0,
+      "fat": 0.5,
+      "fiber": 2.1
+    }
+  },
+  {
+    "id": "dana_biftek",
+    "name": "Dana biftek (ızgara)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 271,
+      "protein": 26.0,
+      "carbs": 0,
+      "fat": 18.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "kuzu_pirzola",
+    "name": "Kuzu pirzola (ızgara)",
+    "category": "protein",
+    "per_100g": {
+      "calories": 294,
+      "protein": 25.0,
+      "carbs": 0,
+      "fat": 21.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "sucuk",
+    "name": "Sucuk",
+    "category": "protein",
+    "per_100g": {
+      "calories": 400,
+      "protein": 19.0,
+      "carbs": 2.0,
+      "fat": 35.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "pastirma",
+    "name": "Pastırma",
+    "category": "protein",
+    "per_100g": {
+      "calories": 219,
+      "protein": 35.0,
+      "carbs": 0.5,
+      "fat": 8.0,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "nar_eksi_salata",
+    "name": "Mevsim salatası",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 20,
+      "protein": 1.2,
+      "carbs": 3.8,
+      "fat": 0.3,
+      "fiber": 2.0
+    }
+  },
+  {
+    "id": "taze_fasulye_pismis",
+    "name": "Taze fasulye (pişmiş)",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 35,
+      "protein": 1.9,
+      "carbs": 7.9,
+      "fat": 0.1,
+      "fiber": 3.4
+    }
+  },
+  {
+    "id": "enginar_pismis",
+    "name": "Enginar (pişmiş)",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 53,
+      "protein": 2.9,
+      "carbs": 10.5,
+      "fat": 0.2,
+      "fiber": 5.4
+    }
+  },
+  {
+    "id": "kirmizi_biber_dolmasi",
+    "name": "Kırmızı biber",
+    "category": "sebze",
+    "per_100g": {
+      "calories": 31,
+      "protein": 1.0,
+      "carbs": 6.0,
+      "fat": 0.3,
+      "fiber": 2.1
+    }
+  },
+  {
+    "id": "incir_taze",
+    "name": "İncir (taze)",
+    "category": "meyve",
+    "per_100g": {
+      "calories": 74,
+      "protein": 0.8,
+      "carbs": 19.0,
+      "fat": 0.3,
+      "fiber": 2.9
+    }
+  },
+  {
+    "id": "kayisi_taze",
+    "name": "Kayısı",
+    "category": "meyve",
+    "per_100g": {
+      "calories": 48,
+      "protein": 1.4,
+      "carbs": 11.0,
+      "fat": 0.4,
+      "fiber": 2.0
+    }
+  },
+  {
+    "id": "kavun",
+    "name": "Kavun",
+    "category": "meyve",
+    "per_100g": {
+      "calories": 34,
+      "protein": 0.8,
+      "carbs": 8.2,
+      "fat": 0.2,
+      "fiber": 0.9
+    }
+  },
+  {
+    "id": "pekmez_uzum",
+    "name": "Pekmez (üzüm)",
+    "category": "diger",
+    "per_100g": {
+      "calories": 270,
+      "protein": 1.5,
+      "carbs": 65.0,
+      "fat": 0.2,
+      "fiber": 0
+    }
+  },
+  {
+    "id": "tahin",
+    "name": "Tahin",
+    "category": "diger",
+    "per_100g": {
+      "calories": 595,
+      "protein": 17.0,
+      "carbs": 21.0,
+      "fat": 54.0,
+      "fiber": 9.3
+    }
+  },
+  {
+    "id": "helva_tahin",
+    "name": "Helva (tahin)",
+    "category": "diger",
+    "per_100g": {
+      "calories": 469,
+      "protein": 12.0,
+      "carbs": 59.0,
+      "fat": 23.0,
+      "fiber": 4.5
+    }
+  },
+  {
+    "id": "cay-demli-sekersiz",
+    "name": "Çay (demli, şekersiz)",
+    "name_en": "Brewed tea, unsweetened",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 1.0,
+      "protein": 0.0,
+      "carbs": 0.3,
+      "fat": 0.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 1.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "turk-kahvesi-sade",
+    "name": "Türk kahvesi (sade)",
+    "name_en": "Turkish coffee, plain",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 2.0,
+      "protein": 0.1,
+      "carbs": 0.4,
+      "fat": 0.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 2.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 60,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "filtre-kahve-sade",
+    "name": "Filtre kahve (sade)",
+    "name_en": "Filter coffee, plain",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 1.0,
+      "protein": 0.1,
+      "carbs": 0.0,
+      "fat": 0.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 2.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "nescafe-sade",
+    "name": "Nescafe (sade)",
+    "name_en": "Instant coffee, plain",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 2.0,
+      "protein": 0.2,
+      "carbs": 0.3,
+      "fat": 0.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 3.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "oralet-1-paket",
+    "name": "Oralet (1 paket)",
+    "name_en": "Oralet instant fruit drink",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 35.0,
+      "protein": 0.0,
+      "carbs": 8.5,
+      "fat": 0.0,
+      "fiber": 0.0,
+      "sugar": 8.0,
+      "sodium": 5.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "boza",
+    "name": "Boza",
+    "name_en": "Boza (fermented millet drink)",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 90.0,
+      "protein": 1.0,
+      "carbs": 20.0,
+      "fat": 0.3,
+      "fiber": 0.5,
+      "sugar": 12.0,
+      "sodium": 10.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "salgam-suyu",
+    "name": "Şalgam suyu",
+    "name_en": "Şalgam (turnip juice)",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 18.0,
+      "protein": 0.5,
+      "carbs": 3.5,
+      "fat": 0.1,
+      "fiber": 0.5,
+      "sugar": 2.0,
+      "sodium": 800.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "limonata-ev-yapimi",
+    "name": "Limonata (ev yapımı)",
+    "name_en": "Homemade lemonade",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 40.0,
+      "protein": 0.1,
+      "carbs": 10.0,
+      "fat": 0.0,
+      "fiber": 0.1,
+      "sugar": 9.0,
+      "sodium": 3.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 250,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "elma-suyu-100",
+    "name": "Elma suyu (100%)",
+    "name_en": "100% apple juice",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 46.0,
+      "protein": 0.1,
+      "carbs": 11.0,
+      "fat": 0.1,
+      "fiber": 0.2,
+      "sugar": 10.0,
+      "sodium": 4.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "portakal-suyu-100",
+    "name": "Portakal suyu (100%)",
+    "name_en": "100% orange juice",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 45.0,
+      "protein": 0.7,
+      "carbs": 10.4,
+      "fat": 0.2,
+      "fiber": 0.2,
+      "sugar": 8.4,
+      "sodium": 1.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "domates-suyu",
+    "name": "Domates suyu",
+    "name_en": "Tomato juice",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 17.0,
+      "protein": 0.8,
+      "carbs": 3.5,
+      "fat": 0.1,
+      "fiber": 0.4,
+      "sugar": 2.6,
+      "sodium": 200.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "sut-tam-yagli",
+    "name": "Süt (tam yağlı)",
+    "name_en": "Whole milk",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 61.0,
+      "protein": 3.2,
+      "carbs": 4.8,
+      "fat": 3.3,
+      "fiber": 0.0,
+      "sugar": 4.8,
+      "sodium": 40.0,
+      "saturated_fat": 2.0
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kefir-sade",
+    "name": "Kefir (sade)",
+    "name_en": "Plain kefir",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 55.0,
+      "protein": 3.4,
+      "carbs": 4.5,
+      "fat": 2.5,
+      "fiber": 0.0,
+      "sugar": 4.5,
+      "sodium": 40.0,
+      "saturated_fat": 1.5
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kombucha",
+    "name": "Kombucha",
+    "name_en": "Kombucha",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 28.0,
+      "protein": 0.0,
+      "carbs": 7.0,
+      "fat": 0.0,
+      "fiber": 0.0,
+      "sugar": 3.0,
+      "sodium": 5.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 250,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "su-0-kcal",
+    "name": "Su (0 kcal)",
+    "name_en": "Water",
+    "brand": null,
+    "barcode": null,
+    "category": "icecek",
+    "source": "ai",
+    "per_100g": {
+      "calories": 0.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 0.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 2.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 200,
+    "serving_unit": "ml",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tam-yagli-sut",
+    "name": "Tam yağlı süt",
+    "name_en": "Whole milk",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 61.0,
+      "protein": 3.2,
+      "carbs": 4.8,
+      "fat": 3.3,
+      "fiber": 0.0,
+      "sugar": 4.8,
+      "sodium": 40.0,
+      "saturated_fat": 2.0
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "yarim-yagli-sut",
+    "name": "Yarım yağlı süt",
+    "name_en": "Semi-skimmed milk",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 46.0,
+      "protein": 3.3,
+      "carbs": 4.9,
+      "fat": 1.6,
+      "fiber": 0.0,
+      "sugar": 4.9,
+      "sodium": 42.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "yagsiz-sut",
+    "name": "Yağsız süt",
+    "name_en": "Skim milk",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 34.0,
+      "protein": 3.4,
+      "carbs": 5.0,
+      "fat": 0.1,
+      "fiber": 0.0,
+      "sugar": 5.0,
+      "sodium": 42.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tam-yagli-yogurt",
+    "name": "Tam yağlı yoğurt",
+    "name_en": "Full-fat yogurt",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 61.0,
+      "protein": 3.5,
+      "carbs": 4.7,
+      "fat": 3.3,
+      "fiber": 0.0,
+      "sugar": 4.7,
+      "sodium": 36.0,
+      "saturated_fat": 2.1
+    },
+    "serving_size": 150,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "yarim-yagli-yogurt",
+    "name": "Yarım yağlı yoğurt",
+    "name_en": "Semi-skimmed yogurt",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 50.0,
+      "protein": 3.8,
+      "carbs": 4.9,
+      "fat": 1.8,
+      "fiber": 0.0,
+      "sugar": 4.9,
+      "sodium": 40.0,
+      "saturated_fat": 1.2
+    },
+    "serving_size": 150,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "suzme-yogurt",
+    "name": "Süzme yoğurt",
+    "name_en": "Strained (Greek-style) yogurt",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 97.0,
+      "protein": 9.0,
+      "carbs": 4.0,
+      "fat": 5.0,
+      "fiber": 0.0,
+      "sugar": 4.0,
+      "sodium": 36.0,
+      "saturated_fat": 3.2
+    },
+    "serving_size": 150,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "beyaz-peynir-tam-yagli",
+    "name": "Beyaz peynir (tam yağlı)",
+    "name_en": "Full-fat white cheese",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 264.0,
+      "protein": 17.0,
+      "carbs": 1.5,
+      "fat": 21.0,
+      "fiber": 0.0,
+      "sugar": 1.5,
+      "sodium": 950.0,
+      "saturated_fat": 14.0
+    },
+    "serving_size": 30,
+    "serving_unit": "dilim",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kasar-peyniri-tam-yagli",
+    "name": "Kaşar peyniri (tam yağlı)",
+    "name_en": "Full-fat kaşar cheese",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 350.0,
+      "protein": 25.0,
+      "carbs": 1.5,
+      "fat": 27.0,
+      "fiber": 0.0,
+      "sugar": 1.5,
+      "sodium": 620.0,
+      "saturated_fat": 17.0
+    },
+    "serving_size": 30,
+    "serving_unit": "dilim",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "lor-peyniri",
+    "name": "Lor peyniri",
+    "name_en": "Curd cheese (lor)",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 98.0,
+      "protein": 12.0,
+      "carbs": 3.0,
+      "fat": 4.0,
+      "fiber": 0.0,
+      "sugar": 3.0,
+      "sodium": 200.0,
+      "saturated_fat": 2.5
+    },
+    "serving_size": 50,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "cokelek",
+    "name": "Çökelek",
+    "name_en": "Çökelek (fresh curd)",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 90.0,
+      "protein": 14.0,
+      "carbs": 2.5,
+      "fat": 2.5,
+      "fiber": 0.0,
+      "sugar": 2.5,
+      "sodium": 220.0,
+      "saturated_fat": 1.5
+    },
+    "serving_size": 50,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tulum-peyniri",
+    "name": "Tulum peyniri",
+    "name_en": "Tulum cheese",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 320.0,
+      "protein": 20.0,
+      "carbs": 1.0,
+      "fat": 26.0,
+      "fiber": 0.0,
+      "sugar": 1.0,
+      "sodium": 1100.0,
+      "saturated_fat": 17.0
+    },
+    "serving_size": 30,
+    "serving_unit": "dilim",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ezine-peyniri",
+    "name": "Ezine peyniri",
+    "name_en": "Ezine cheese",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 280.0,
+      "protein": 18.0,
+      "carbs": 1.5,
+      "fat": 22.0,
+      "fiber": 0.0,
+      "sugar": 1.5,
+      "sodium": 900.0,
+      "saturated_fat": 15.0
+    },
+    "serving_size": 30,
+    "serving_unit": "dilim",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "krema",
+    "name": "Krema",
+    "name_en": "Cream",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 340.0,
+      "protein": 2.1,
+      "carbs": 2.8,
+      "fat": 36.0,
+      "fiber": 0.0,
+      "sugar": 2.8,
+      "sodium": 38.0,
+      "saturated_fat": 23.0
+    },
+    "serving_size": 15,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tam-yagli-sut-tozu",
+    "name": "Tam yağlı süt tozu",
+    "name_en": "Full-fat powdered milk",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 496.0,
+      "protein": 26.0,
+      "carbs": 38.0,
+      "fat": 27.0,
+      "fiber": 0.0,
+      "sugar": 38.0,
+      "sodium": 380.0,
+      "saturated_fat": 17.0
+    },
+    "serving_size": 25,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein"
+    ],
+    "verified": false
+  },
+  {
+    "id": "mozarella",
+    "name": "Mozarella",
+    "name_en": "Mozzarella",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 280.0,
+      "protein": 22.0,
+      "carbs": 2.2,
+      "fat": 17.0,
+      "fiber": 0.0,
+      "sugar": 1.0,
+      "sodium": 600.0,
+      "saturated_fat": 10.0
+    },
+    "serving_size": 30,
+    "serving_unit": "dilim",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "labne-peyniri",
+    "name": "Labne peyniri",
+    "name_en": "Labneh",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 150.0,
+      "protein": 7.0,
+      "carbs": 4.0,
+      "fat": 12.0,
+      "fiber": 0.0,
+      "sugar": 4.0,
+      "sodium": 250.0,
+      "saturated_fat": 7.5
+    },
+    "serving_size": 50,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dil-peyniri",
+    "name": "Dil peyniri",
+    "name_en": "String cheese (dil peyniri)",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 290.0,
+      "protein": 24.0,
+      "carbs": 2.0,
+      "fat": 21.0,
+      "fiber": 0.0,
+      "sugar": 1.0,
+      "sodium": 700.0,
+      "saturated_fat": 13.0
+    },
+    "serving_size": 30,
+    "serving_unit": "dilim",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "hellim-peyniri-izgara",
+    "name": "Hellim peyniri (ızgara)",
+    "name_en": "Grilled halloumi",
+    "brand": null,
+    "barcode": null,
+    "category": "sut",
+    "source": "ai",
+    "per_100g": {
+      "calories": 320.0,
+      "protein": 22.0,
+      "carbs": 2.0,
+      "fat": 25.0,
+      "fiber": 0.0,
+      "sugar": 1.0,
+      "sodium": 900.0,
+      "saturated_fat": 16.0
+    },
+    "serving_size": 60,
+    "serving_unit": "dilim",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "zeytinyagi-sizma",
+    "name": "Zeytinyağı (sızma)",
+    "name_en": "Extra virgin olive oil",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 884.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 100.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 2.0,
+      "saturated_fat": 14.0
+    },
+    "serving_size": 10,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "aycicek-yagi",
+    "name": "Ayçiçek yağı",
+    "name_en": "Sunflower oil",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 884.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 100.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 0.0,
+      "saturated_fat": 10.0
+    },
+    "serving_size": 10,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "findik-cig",
+    "name": "Fındık (çiğ)",
+    "name_en": "Raw hazelnut",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 628.0,
+      "protein": 15.0,
+      "carbs": 17.0,
+      "fat": 61.0,
+      "fiber": 9.7,
+      "sugar": 4.3,
+      "sodium": 0.0,
+      "saturated_fat": 4.5
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ceviz-ic",
+    "name": "Ceviz (iç)",
+    "name_en": "Walnut kernel",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 654.0,
+      "protein": 15.0,
+      "carbs": 14.0,
+      "fat": 65.0,
+      "fiber": 6.7,
+      "sugar": 2.6,
+      "sodium": 2.0,
+      "saturated_fat": 6.0
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "badem-cig",
+    "name": "Badem (çiğ)",
+    "name_en": "Raw almond",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 579.0,
+      "protein": 21.0,
+      "carbs": 22.0,
+      "fat": 50.0,
+      "fiber": 12.5,
+      "sugar": 4.4,
+      "sodium": 1.0,
+      "saturated_fat": 3.8
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "antep-fistigi-cig",
+    "name": "Antep fıstığı (çiğ)",
+    "name_en": "Raw pistachio",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 562.0,
+      "protein": 20.0,
+      "carbs": 28.0,
+      "fat": 45.0,
+      "fiber": 10.6,
+      "sugar": 7.7,
+      "sodium": 1.0,
+      "saturated_fat": 5.4
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kaju-cig",
+    "name": "Kaju (çiğ)",
+    "name_en": "Raw cashew",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 553.0,
+      "protein": 18.0,
+      "carbs": 30.0,
+      "fat": 44.0,
+      "fiber": 3.3,
+      "sugar": 5.9,
+      "sodium": 12.0,
+      "saturated_fat": 7.8
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "yer-fistigi-cig",
+    "name": "Yer fıstığı (çiğ)",
+    "name_en": "Raw peanut",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 567.0,
+      "protein": 26.0,
+      "carbs": 16.0,
+      "fat": 49.0,
+      "fiber": 8.5,
+      "sugar": 4.0,
+      "sodium": 18.0,
+      "saturated_fat": 7.0
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "susam-cig",
+    "name": "Susam (çiğ)",
+    "name_en": "Raw sesame",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 573.0,
+      "protein": 18.0,
+      "carbs": 23.0,
+      "fat": 50.0,
+      "fiber": 12.0,
+      "sugar": 0.3,
+      "sodium": 11.0,
+      "saturated_fat": 7.0
+    },
+    "serving_size": 15,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "cekirdek-ay-cicegi",
+    "name": "Çekirdek (ay çiçeği)",
+    "name_en": "Sunflower seeds",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 584.0,
+      "protein": 21.0,
+      "carbs": 20.0,
+      "fat": 51.0,
+      "fiber": 8.6,
+      "sugar": 2.6,
+      "sodium": 9.0,
+      "saturated_fat": 5.4
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kabak-cekirdegi",
+    "name": "Kabak çekirdeği",
+    "name_en": "Pumpkin seeds",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 559.0,
+      "protein": 30.0,
+      "carbs": 11.0,
+      "fat": 49.0,
+      "fiber": 6.0,
+      "sugar": 1.4,
+      "sodium": 7.0,
+      "saturated_fat": 8.7
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "fistik-ezmesi-sade",
+    "name": "Fıstık ezmesi (sade)",
+    "name_en": "Plain peanut butter",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 588.0,
+      "protein": 25.0,
+      "carbs": 20.0,
+      "fat": 50.0,
+      "fiber": 6.0,
+      "sugar": 9.0,
+      "sodium": 17.0,
+      "saturated_fat": 10.0
+    },
+    "serving_size": 15,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "zeytin-yesil",
+    "name": "Zeytin (yeşil)",
+    "name_en": "Green olive",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 145.0,
+      "protein": 1.0,
+      "carbs": 4.0,
+      "fat": 15.0,
+      "fiber": 3.3,
+      "sugar": 0.5,
+      "sodium": 1556.0,
+      "saturated_fat": 2.0
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "zeytin-siyah",
+    "name": "Zeytin (siyah)",
+    "name_en": "Black olive",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 115.0,
+      "protein": 0.8,
+      "carbs": 6.3,
+      "fat": 11.0,
+      "fiber": 3.2,
+      "sugar": 0.0,
+      "sodium": 735.0,
+      "saturated_fat": 1.5
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "hindistan-cevizi-yagi",
+    "name": "Hindistan cevizi yağı",
+    "name_en": "Coconut oil",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 862.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 100.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 0.0,
+      "saturated_fat": 87.0
+    },
+    "serving_size": 10,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "keten-tohumu",
+    "name": "Keten tohumu",
+    "name_en": "Flaxseed",
+    "brand": null,
+    "barcode": null,
+    "category": "yag",
+    "source": "ai",
+    "per_100g": {
+      "calories": 534.0,
+      "protein": 18.0,
+      "carbs": 29.0,
+      "fat": 42.0,
+      "fiber": 27.0,
+      "sugar": 1.6,
+      "sodium": 30.0,
+      "saturated_fat": 3.7
+    },
+    "serving_size": 15,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "elma-orta-boy",
+    "name": "Elma (orta boy)",
+    "name_en": "Apple (medium)",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 52.0,
+      "protein": 0.3,
+      "carbs": 14.0,
+      "fat": 0.2,
+      "fiber": 2.4,
+      "sugar": 10.0,
+      "sodium": 1.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 150,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "armut-orta-boy",
+    "name": "Armut (orta boy)",
+    "name_en": "Pear (medium)",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 57.0,
+      "protein": 0.4,
+      "carbs": 15.0,
+      "fat": 0.1,
+      "fiber": 3.1,
+      "sugar": 10.0,
+      "sodium": 1.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 150,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "muz-orta-boy",
+    "name": "Muz (orta boy)",
+    "name_en": "Banana (medium)",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 89.0,
+      "protein": 1.1,
+      "carbs": 23.0,
+      "fat": 0.3,
+      "fiber": 2.6,
+      "sugar": 12.0,
+      "sodium": 1.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 120,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "portakal-orta-boy",
+    "name": "Portakal (orta boy)",
+    "name_en": "Orange (medium)",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 47.0,
+      "protein": 0.9,
+      "carbs": 12.0,
+      "fat": 0.1,
+      "fiber": 2.4,
+      "sugar": 9.0,
+      "sodium": 0.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 150,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "mandalina",
+    "name": "Mandalina",
+    "name_en": "Tangerine",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 53.0,
+      "protein": 0.8,
+      "carbs": 13.0,
+      "fat": 0.3,
+      "fiber": 1.8,
+      "sugar": 10.6,
+      "sodium": 2.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 80,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "limon",
+    "name": "Limon",
+    "name_en": "Lemon",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 29.0,
+      "protein": 1.1,
+      "carbs": 9.3,
+      "fat": 0.3,
+      "fiber": 2.8,
+      "sugar": 2.5,
+      "sodium": 2.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 60,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "cilek-taze",
+    "name": "Çilek (taze)",
+    "name_en": "Fresh strawberry",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 32.0,
+      "protein": 0.7,
+      "carbs": 7.7,
+      "fat": 0.3,
+      "fiber": 2.0,
+      "sugar": 4.9,
+      "sodium": 1.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "uzum-yesil",
+    "name": "Üzüm (yeşil)",
+    "name_en": "Green grape",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 69.0,
+      "protein": 0.7,
+      "carbs": 18.0,
+      "fat": 0.2,
+      "fiber": 0.9,
+      "sugar": 16.0,
+      "sodium": 2.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "uzum-siyah",
+    "name": "Üzüm (siyah)",
+    "name_en": "Black grape",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 67.0,
+      "protein": 0.6,
+      "carbs": 17.0,
+      "fat": 0.4,
+      "fiber": 1.0,
+      "sugar": 15.0,
+      "sodium": 2.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kiraz",
+    "name": "Kiraz",
+    "name_en": "Cherry",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 63.0,
+      "protein": 1.1,
+      "carbs": 16.0,
+      "fat": 0.2,
+      "fiber": 2.1,
+      "sugar": 13.0,
+      "sodium": 0.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "visne",
+    "name": "Vişne",
+    "name_en": "Sour cherry",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 50.0,
+      "protein": 1.0,
+      "carbs": 12.2,
+      "fat": 0.3,
+      "fiber": 1.6,
+      "sugar": 8.5,
+      "sodium": 3.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "seftali",
+    "name": "Şeftali",
+    "name_en": "Peach",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 39.0,
+      "protein": 0.9,
+      "carbs": 9.5,
+      "fat": 0.3,
+      "fiber": 1.5,
+      "sugar": 8.4,
+      "sodium": 0.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 150,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kayisi-taze",
+    "name": "Kayısı (taze)",
+    "name_en": "Fresh apricot",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 48.0,
+      "protein": 1.4,
+      "carbs": 11.0,
+      "fat": 0.4,
+      "fiber": 2.0,
+      "sugar": 9.2,
+      "sodium": 1.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "erik",
+    "name": "Erik",
+    "name_en": "Plum",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 46.0,
+      "protein": 0.7,
+      "carbs": 11.4,
+      "fat": 0.3,
+      "fiber": 1.4,
+      "sugar": 9.9,
+      "sodium": 0.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dut-siyah",
+    "name": "Dut (siyah)",
+    "name_en": "Black mulberry",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 43.0,
+      "protein": 1.4,
+      "carbs": 9.8,
+      "fat": 0.4,
+      "fiber": 1.7,
+      "sugar": 8.1,
+      "sodium": 10.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 80,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "incir-taze",
+    "name": "İncir (taze)",
+    "name_en": "Fresh fig",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 74.0,
+      "protein": 0.8,
+      "carbs": 19.0,
+      "fat": 0.3,
+      "fiber": 2.9,
+      "sugar": 16.0,
+      "sodium": 1.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "incir-kuru",
+    "name": "İncir (kuru)",
+    "name_en": "Dried fig",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 249.0,
+      "protein": 3.3,
+      "carbs": 64.0,
+      "fat": 0.9,
+      "fiber": 9.8,
+      "sugar": 48.0,
+      "sodium": 10.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kayisi-kuru",
+    "name": "Kayısı (kuru)",
+    "name_en": "Dried apricot",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 241.0,
+      "protein": 3.4,
+      "carbs": 63.0,
+      "fat": 0.5,
+      "fiber": 7.3,
+      "sugar": 53.0,
+      "sodium": 10.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kuru-uzum",
+    "name": "Kuru üzüm",
+    "name_en": "Raisins",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 299.0,
+      "protein": 3.1,
+      "carbs": 79.0,
+      "fat": 0.5,
+      "fiber": 3.7,
+      "sugar": 59.0,
+      "sodium": 11.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "hurma",
+    "name": "Hurma",
+    "name_en": "Date",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 277.0,
+      "protein": 1.8,
+      "carbs": 75.0,
+      "fat": 0.2,
+      "fiber": 6.7,
+      "sugar": 63.0,
+      "sodium": 1.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 25,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kivi",
+    "name": "Kivi",
+    "name_en": "Kiwi",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 61.0,
+      "protein": 1.1,
+      "carbs": 15.0,
+      "fat": 0.5,
+      "fiber": 3.0,
+      "sugar": 9.0,
+      "sodium": 3.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 90,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "avokado",
+    "name": "Avokado",
+    "name_en": "Avocado",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 160.0,
+      "protein": 2.0,
+      "carbs": 8.5,
+      "fat": 15.0,
+      "fiber": 6.7,
+      "sugar": 0.7,
+      "sodium": 7.0,
+      "saturated_fat": 2.1
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "nar-taze",
+    "name": "Nar (taze)",
+    "name_en": "Fresh pomegranate",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 83.0,
+      "protein": 1.7,
+      "carbs": 19.0,
+      "fat": 1.2,
+      "fiber": 4.0,
+      "sugar": 14.0,
+      "sodium": 3.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "greyfurt",
+    "name": "Greyfurt",
+    "name_en": "Grapefruit",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 42.0,
+      "protein": 0.8,
+      "carbs": 10.7,
+      "fat": 0.1,
+      "fiber": 1.6,
+      "sugar": 7.0,
+      "sodium": 0.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 200,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ananas-taze",
+    "name": "Ananas (taze)",
+    "name_en": "Fresh pineapple",
+    "brand": null,
+    "barcode": null,
+    "category": "meyve",
+    "source": "ai",
+    "per_100g": {
+      "calories": 50.0,
+      "protein": 0.5,
+      "carbs": 13.1,
+      "fat": 0.1,
+      "fiber": 1.4,
+      "sugar": 9.9,
+      "sodium": 1.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "pirinc-beyaz-pismis",
+    "name": "Pirinç (beyaz, pişmiş)",
+    "name_en": "Cooked white rice",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 130.0,
+      "protein": 2.7,
+      "carbs": 28.0,
+      "fat": 0.3,
+      "fiber": 0.4,
+      "sugar": 0.1,
+      "sodium": 1.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "pirinc-esmer-pismis",
+    "name": "Pirinç (esmer, pişmiş)",
+    "name_en": "Cooked brown rice",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 123.0,
+      "protein": 2.7,
+      "carbs": 26.0,
+      "fat": 1.0,
+      "fiber": 1.8,
+      "sugar": 0.4,
+      "sodium": 4.0,
+      "saturated_fat": 0.2
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "bulgur-pilavi-ince",
+    "name": "Bulgur pilavı (ince)",
+    "name_en": "Fine bulgur pilaf",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 150.0,
+      "protein": 5.0,
+      "carbs": 28.0,
+      "fat": 3.0,
+      "fiber": 4.0,
+      "sugar": 0.5,
+      "sodium": 250.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "bulgur-pilavi-iri",
+    "name": "Bulgur pilavı (iri)",
+    "name_en": "Coarse bulgur pilaf",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 148.0,
+      "protein": 5.0,
+      "carbs": 27.0,
+      "fat": 3.0,
+      "fiber": 4.5,
+      "sugar": 0.5,
+      "sodium": 250.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "makarna-pismis",
+    "name": "Makarna (pişmiş)",
+    "name_en": "Cooked pasta",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 158.0,
+      "protein": 5.8,
+      "carbs": 31.0,
+      "fat": 0.9,
+      "fiber": 1.8,
+      "sugar": 0.6,
+      "sodium": 1.0,
+      "saturated_fat": 0.2
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "tam-bugday-makarna-pismis",
+    "name": "Tam buğday makarna (pişmiş)",
+    "name_en": "Cooked whole wheat pasta",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 149.0,
+      "protein": 6.3,
+      "carbs": 30.0,
+      "fat": 1.4,
+      "fiber": 4.5,
+      "sugar": 0.8,
+      "sodium": 4.0,
+      "saturated_fat": 0.3
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "sehriye-corbasi",
+    "name": "Şehriye çorbası",
+    "name_en": "Vermicelli soup",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 60.0,
+      "protein": 2.0,
+      "carbs": 10.0,
+      "fat": 1.5,
+      "fiber": 0.5,
+      "sugar": 0.5,
+      "sodium": 350.0,
+      "saturated_fat": 0.6
+    },
+    "serving_size": 250,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "arpa-sehriye",
+    "name": "Arpa şehriye",
+    "name_en": "Orzo / barley noodles",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 152.0,
+      "protein": 5.0,
+      "carbs": 31.0,
+      "fat": 0.8,
+      "fiber": 1.5,
+      "sugar": 0.5,
+      "sodium": 3.0,
+      "saturated_fat": 0.2
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "irmik-helvasi",
+    "name": "İrmik helvası",
+    "name_en": "Semolina halva",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 380.0,
+      "protein": 5.0,
+      "carbs": 55.0,
+      "fat": 16.0,
+      "fiber": 1.0,
+      "sugar": 30.0,
+      "sodium": 80.0,
+      "saturated_fat": 7.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "misir-unu-polenta",
+    "name": "Mısır unu (polenta)",
+    "name_en": "Corn flour (polenta)",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 85.0,
+      "protein": 2.0,
+      "carbs": 18.0,
+      "fat": 0.5,
+      "fiber": 1.0,
+      "sugar": 0.2,
+      "sodium": 1.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "yulaf-ezmesi-pismis",
+    "name": "Yulaf ezmesi (pişmiş)",
+    "name_en": "Cooked oatmeal",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 71.0,
+      "protein": 2.5,
+      "carbs": 12.0,
+      "fat": 1.5,
+      "fiber": 1.7,
+      "sugar": 0.3,
+      "sodium": 4.0,
+      "saturated_fat": 0.3
+    },
+    "serving_size": 200,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "karabugday-pismis",
+    "name": "Karabuğday (pişmiş)",
+    "name_en": "Cooked buckwheat",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 92.0,
+      "protein": 3.4,
+      "carbs": 20.0,
+      "fat": 0.6,
+      "fiber": 2.7,
+      "sugar": 0.9,
+      "sodium": 1.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kinoa-pismis",
+    "name": "Kinoa (pişmiş)",
+    "name_en": "Cooked quinoa",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 120.0,
+      "protein": 4.4,
+      "carbs": 21.0,
+      "fat": 1.9,
+      "fiber": 2.8,
+      "sugar": 0.9,
+      "sodium": 7.0,
+      "saturated_fat": 0.2
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "cavdar-ekmegi",
+    "name": "Çavdar ekmeği",
+    "name_en": "Rye bread",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 250.0,
+      "protein": 8.5,
+      "carbs": 48.0,
+      "fat": 1.7,
+      "fiber": 5.8,
+      "sugar": 4.0,
+      "sodium": 580.0,
+      "saturated_fat": 0.3
+    },
+    "serving_size": 50,
+    "serving_unit": "dilim",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tam-bugday-ekmegi",
+    "name": "Tam buğday ekmeği",
+    "name_en": "Whole wheat bread",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 247.0,
+      "protein": 13.0,
+      "carbs": 41.0,
+      "fat": 3.4,
+      "fiber": 7.0,
+      "sugar": 6.0,
+      "sodium": 450.0,
+      "saturated_fat": 0.7
+    },
+    "serving_size": 50,
+    "serving_unit": "dilim",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "beyaz-ekmek",
+    "name": "Beyaz ekmek",
+    "name_en": "White bread",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 265.0,
+      "protein": 9.0,
+      "carbs": 49.0,
+      "fat": 3.2,
+      "fiber": 2.7,
+      "sugar": 5.0,
+      "sodium": 490.0,
+      "saturated_fat": 0.7
+    },
+    "serving_size": 50,
+    "serving_unit": "dilim",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "pide-sade",
+    "name": "Pide (sade)",
+    "name_en": "Plain pide bread",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 275.0,
+      "protein": 9.0,
+      "carbs": 53.0,
+      "fat": 2.5,
+      "fiber": 2.5,
+      "sugar": 2.0,
+      "sodium": 500.0,
+      "saturated_fat": 0.5
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "simit",
+    "name": "Simit",
+    "name_en": "Simit (sesame bread ring)",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 310.0,
+      "protein": 9.0,
+      "carbs": 55.0,
+      "fat": 6.0,
+      "fiber": 2.5,
+      "sugar": 4.0,
+      "sodium": 550.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 100,
+    "serving_unit": "adet",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "pogaca-sade",
+    "name": "Poğaça (sade)",
+    "name_en": "Plain poğaça",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 380.0,
+      "protein": 8.0,
+      "carbs": 45.0,
+      "fat": 19.0,
+      "fiber": 1.5,
+      "sugar": 4.0,
+      "sodium": 480.0,
+      "saturated_fat": 9.0
+    },
+    "serving_size": 70,
+    "serving_unit": "adet",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "krep-sade",
+    "name": "Krep (sade)",
+    "name_en": "Plain crepe",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 220.0,
+      "protein": 6.0,
+      "carbs": 28.0,
+      "fat": 9.0,
+      "fiber": 1.0,
+      "sugar": 3.0,
+      "sodium": 280.0,
+      "saturated_fat": 4.0
+    },
+    "serving_size": 80,
+    "serving_unit": "adet",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "gozleme-peynirli",
+    "name": "Gözleme (peynirli)",
+    "name_en": "Cheese gözleme",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 290.0,
+      "protein": 10.0,
+      "carbs": 33.0,
+      "fat": 13.0,
+      "fiber": 1.5,
+      "sugar": 1.5,
+      "sodium": 480.0,
+      "saturated_fat": 6.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "borek-peynirli-yufka",
+    "name": "Börek (peynirli, yufka)",
+    "name_en": "Cheese börek (phyllo)",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 320.0,
+      "protein": 10.0,
+      "carbs": 28.0,
+      "fat": 19.0,
+      "fiber": 1.2,
+      "sugar": 1.5,
+      "sodium": 520.0,
+      "saturated_fat": 9.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "su-boregi",
+    "name": "Su böreği",
+    "name_en": "Su böreği (water börek)",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 300.0,
+      "protein": 11.0,
+      "carbs": 26.0,
+      "fat": 18.0,
+      "fiber": 1.0,
+      "sugar": 1.0,
+      "sodium": 500.0,
+      "saturated_fat": 8.5
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "tepsi-boregi-kiymali",
+    "name": "Tepsi böreği (kıymalı)",
+    "name_en": "Tray börek with minced meat",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 310.0,
+      "protein": 12.0,
+      "carbs": 27.0,
+      "fat": 18.0,
+      "fiber": 1.2,
+      "sugar": 1.5,
+      "sodium": 530.0,
+      "saturated_fat": 8.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "sigara-boregi",
+    "name": "Sigara böreği",
+    "name_en": "Sigara börek (fried cheese rolls)",
+    "brand": null,
+    "barcode": null,
+    "category": "tahil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 340.0,
+      "protein": 9.0,
+      "carbs": 30.0,
+      "fat": 21.0,
+      "fiber": 1.0,
+      "sugar": 1.0,
+      "sodium": 490.0,
+      "saturated_fat": 9.0
+    },
+    "serving_size": 80,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "kirmizi-mercimek-haslanmis",
+    "name": "Kırmızı mercimek (haşlanmış)",
+    "name_en": "Boiled red lentils",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 116.0,
+      "protein": 9.0,
+      "carbs": 20.0,
+      "fat": 0.4,
+      "fiber": 8.0,
+      "sugar": 1.8,
+      "sodium": 2.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "yesil-mercimek-haslanmis",
+    "name": "Yeşil mercimek (haşlanmış)",
+    "name_en": "Boiled green lentils",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 116.0,
+      "protein": 9.0,
+      "carbs": 20.0,
+      "fat": 0.4,
+      "fiber": 8.0,
+      "sugar": 1.8,
+      "sodium": 2.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "nohut-haslanmis",
+    "name": "Nohut (haşlanmış)",
+    "name_en": "Boiled chickpeas",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 164.0,
+      "protein": 9.0,
+      "carbs": 27.0,
+      "fat": 2.6,
+      "fiber": 7.6,
+      "sugar": 4.8,
+      "sodium": 7.0,
+      "saturated_fat": 0.3
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kuru-fasulye-haslanmis",
+    "name": "Kuru fasulye (haşlanmış)",
+    "name_en": "Boiled white beans",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 127.0,
+      "protein": 8.7,
+      "carbs": 23.0,
+      "fat": 0.5,
+      "fiber": 6.4,
+      "sugar": 0.3,
+      "sodium": 2.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "barbunya-haslanmis",
+    "name": "Barbunya (haşlanmış)",
+    "name_en": "Boiled borlotti beans",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 130.0,
+      "protein": 8.7,
+      "carbs": 23.0,
+      "fat": 0.5,
+      "fiber": 8.0,
+      "sugar": 1.0,
+      "sodium": 3.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "borulce-haslanmis",
+    "name": "Börülce (haşlanmış)",
+    "name_en": "Boiled black-eyed peas",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 116.0,
+      "protein": 7.7,
+      "carbs": 20.8,
+      "fat": 0.5,
+      "fiber": 6.5,
+      "sugar": 3.5,
+      "sodium": 4.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "siyah-fasulye-haslanmis",
+    "name": "Siyah fasulye (haşlanmış)",
+    "name_en": "Boiled black beans",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 132.0,
+      "protein": 8.9,
+      "carbs": 24.0,
+      "fat": 0.5,
+      "fiber": 8.7,
+      "sugar": 0.3,
+      "sodium": 1.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "bakla-haslanmis",
+    "name": "Bakla (haşlanmış)",
+    "name_en": "Boiled fava beans",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 110.0,
+      "protein": 7.6,
+      "carbs": 19.7,
+      "fat": 0.4,
+      "fiber": 5.4,
+      "sugar": 1.8,
+      "sodium": 5.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "bezelye-taze-haslanmis",
+    "name": "Bezelye (taze, haşlanmış)",
+    "name_en": "Boiled fresh peas",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 84.0,
+      "protein": 5.4,
+      "carbs": 14.0,
+      "fat": 0.4,
+      "fiber": 5.1,
+      "sugar": 5.7,
+      "sodium": 3.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "soya-fasulyesi-haslanmis",
+    "name": "Soya fasulyesi (haşlanmış)",
+    "name_en": "Boiled soybeans",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 173.0,
+      "protein": 16.6,
+      "carbs": 9.9,
+      "fat": 9.0,
+      "fiber": 6.0,
+      "sugar": 3.0,
+      "sodium": 1.0,
+      "saturated_fat": 1.3
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "mercimek-corbasi-ev-yapimi",
+    "name": "Mercimek çorbası (ev yapımı)",
+    "name_en": "Homemade lentil soup",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 70.0,
+      "protein": 4.0,
+      "carbs": 11.0,
+      "fat": 1.5,
+      "fiber": 2.5,
+      "sugar": 1.5,
+      "sodium": 350.0,
+      "saturated_fat": 0.5
+    },
+    "serving_size": 250,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "nohut-pilavi",
+    "name": "Nohut pilavı",
+    "name_en": "Chickpea rice pilaf",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 160.0,
+      "protein": 5.0,
+      "carbs": 26.0,
+      "fat": 4.0,
+      "fiber": 2.0,
+      "sugar": 1.0,
+      "sodium": 280.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "kuru-fasulye-yemegi",
+    "name": "Kuru fasulye yemeği",
+    "name_en": "White bean stew",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 130.0,
+      "protein": 7.0,
+      "carbs": 18.0,
+      "fat": 4.0,
+      "fiber": 5.0,
+      "sugar": 2.0,
+      "sodium": 320.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 250,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "barbunya-pilaki",
+    "name": "Barbunya pilaki",
+    "name_en": "Borlotti bean pilaki",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 140.0,
+      "protein": 6.0,
+      "carbs": 17.0,
+      "fat": 6.0,
+      "fiber": 5.0,
+      "sugar": 2.0,
+      "sodium": 280.0,
+      "saturated_fat": 0.8
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "piyaz",
+    "name": "Piyaz",
+    "name_en": "Turkish bean salad",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 145.0,
+      "protein": 6.0,
+      "carbs": 16.0,
+      "fat": 7.0,
+      "fiber": 5.0,
+      "sugar": 3.0,
+      "sodium": 300.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "fava",
+    "name": "Fava",
+    "name_en": "Fava bean puree (olive oil)",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 130.0,
+      "protein": 6.0,
+      "carbs": 15.0,
+      "fat": 6.0,
+      "fiber": 5.0,
+      "sugar": 1.0,
+      "sodium": 250.0,
+      "saturated_fat": 0.8
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ezogelin-corbasi",
+    "name": "Ezogelin çorbası",
+    "name_en": "Ezogelin soup",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 75.0,
+      "protein": 3.5,
+      "carbs": 11.0,
+      "fat": 2.0,
+      "fiber": 2.0,
+      "sugar": 1.0,
+      "sodium": 380.0,
+      "saturated_fat": 0.6
+    },
+    "serving_size": 250,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dugun-corbasi",
+    "name": "Düğün çorbası",
+    "name_en": "Düğün soup",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 95.0,
+      "protein": 4.0,
+      "carbs": 8.0,
+      "fat": 5.0,
+      "fiber": 0.5,
+      "sugar": 1.0,
+      "sodium": 400.0,
+      "saturated_fat": 2.5
+    },
+    "serving_size": 250,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tarhana-corbasi",
+    "name": "Tarhana çorbası",
+    "name_en": "Tarhana soup",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 65.0,
+      "protein": 2.5,
+      "carbs": 10.0,
+      "fat": 1.5,
+      "fiber": 1.0,
+      "sugar": 1.5,
+      "sodium": 420.0,
+      "saturated_fat": 0.5
+    },
+    "serving_size": 250,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "yayla-corbasi",
+    "name": "Yayla çorbası",
+    "name_en": "Yayla soup (yogurt soup)",
+    "brand": null,
+    "barcode": null,
+    "category": "baklagil",
+    "source": "ai",
+    "per_100g": {
+      "calories": 80.0,
+      "protein": 3.5,
+      "carbs": 6.0,
+      "fat": 4.5,
+      "fiber": 0.5,
+      "sugar": 2.0,
+      "sodium": 380.0,
+      "saturated_fat": 2.5
+    },
+    "serving_size": 250,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dana-kiyma-yagli",
+    "name": "Dana kıyma (yağlı)",
+    "name_en": "Ground beef (fatty)",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 254.0,
+      "protein": 17.2,
+      "carbs": 0.0,
+      "fat": 20.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 75.0,
+      "saturated_fat": 8.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dana-kiyma-yagsiz",
+    "name": "Dana kıyma (yağsız)",
+    "name_en": "Ground beef (lean)",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 176.0,
+      "protein": 20.0,
+      "carbs": 0.0,
+      "fat": 10.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 70.0,
+      "saturated_fat": 4.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dana-biftek",
+    "name": "Dana biftek",
+    "name_en": "Beef steak",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 250.0,
+      "protein": 26.0,
+      "carbs": 0.0,
+      "fat": 15.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 60.0,
+      "saturated_fat": 6.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dana-antrikot",
+    "name": "Dana antrikot",
+    "name_en": "Beef ribeye",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 291.0,
+      "protein": 24.0,
+      "carbs": 0.0,
+      "fat": 21.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 58.0,
+      "saturated_fat": 9.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dana-kaburga",
+    "name": "Dana kaburga",
+    "name_en": "Beef short ribs",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 320.0,
+      "protein": 21.0,
+      "carbs": 0.0,
+      "fat": 26.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 65.0,
+      "saturated_fat": 11.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dana-ciger",
+    "name": "Dana ciğer",
+    "name_en": "Beef liver",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 175.0,
+      "protein": 26.0,
+      "carbs": 4.0,
+      "fat": 5.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 69.0,
+      "saturated_fat": 2.0
+    },
+    "serving_size": 120,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kuzu-pirzola",
+    "name": "Kuzu pirzola",
+    "name_en": "Lamb chop",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 294.0,
+      "protein": 25.0,
+      "carbs": 0.0,
+      "fat": 21.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 72.0,
+      "saturated_fat": 9.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kuzu-kol",
+    "name": "Kuzu kol",
+    "name_en": "Lamb shoulder",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 258.0,
+      "protein": 25.0,
+      "carbs": 0.0,
+      "fat": 17.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 70.0,
+      "saturated_fat": 7.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kuzu-kiyma",
+    "name": "Kuzu kıyma",
+    "name_en": "Ground lamb",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 282.0,
+      "protein": 25.0,
+      "carbs": 0.0,
+      "fat": 20.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 75.0,
+      "saturated_fat": 8.5
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tavuk-gogsu-haslama",
+    "name": "Tavuk göğsü (haşlama)",
+    "name_en": "Boiled chicken breast",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 165.0,
+      "protein": 31.0,
+      "carbs": 0.0,
+      "fat": 3.6,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 74.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tavuk-gogsu-izgara",
+    "name": "Tavuk göğsü (ızgara)",
+    "name_en": "Grilled chicken breast",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 172.0,
+      "protein": 32.0,
+      "carbs": 0.0,
+      "fat": 4.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 80.0,
+      "saturated_fat": 1.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tavuk-but-firin",
+    "name": "Tavuk but (fırın)",
+    "name_en": "Roasted chicken thigh",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 209.0,
+      "protein": 26.0,
+      "carbs": 0.0,
+      "fat": 11.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 82.0,
+      "saturated_fat": 3.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tavuk-but-haslama",
+    "name": "Tavuk but (haşlama)",
+    "name_en": "Boiled chicken thigh",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 190.0,
+      "protein": 27.0,
+      "carbs": 0.0,
+      "fat": 8.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 80.0,
+      "saturated_fat": 2.3
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tavuk-kanat-izgara",
+    "name": "Tavuk kanat (ızgara)",
+    "name_en": "Grilled chicken wing",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 203.0,
+      "protein": 30.0,
+      "carbs": 0.0,
+      "fat": 8.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 82.0,
+      "saturated_fat": 2.3
+    },
+    "serving_size": 120,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tavuk-kiyma",
+    "name": "Tavuk kıyma",
+    "name_en": "Ground chicken",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 143.0,
+      "protein": 17.0,
+      "carbs": 0.0,
+      "fat": 8.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 65.0,
+      "saturated_fat": 2.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "hindi-gogsu",
+    "name": "Hindi göğsü",
+    "name_en": "Turkey breast",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 135.0,
+      "protein": 30.0,
+      "carbs": 0.0,
+      "fat": 1.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 55.0,
+      "saturated_fat": 0.3
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "somon-izgara",
+    "name": "Somon (ızgara)",
+    "name_en": "Grilled salmon",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 206.0,
+      "protein": 22.0,
+      "carbs": 0.0,
+      "fat": 13.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 59.0,
+      "saturated_fat": 3.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "levrek-izgara",
+    "name": "Levrek (ızgara)",
+    "name_en": "Grilled sea bass",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 124.0,
+      "protein": 23.0,
+      "carbs": 0.0,
+      "fat": 2.5,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 68.0,
+      "saturated_fat": 0.6
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "cupra-izgara",
+    "name": "Çupra (ızgara)",
+    "name_en": "Grilled sea bream",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 130.0,
+      "protein": 22.0,
+      "carbs": 0.0,
+      "fat": 4.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 65.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "hamsi-tava",
+    "name": "Hamsi (tava)",
+    "name_en": "Fried anchovy",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 220.0,
+      "protein": 18.0,
+      "carbs": 5.0,
+      "fat": 15.0,
+      "fiber": 0.2,
+      "sugar": 0.0,
+      "sodium": 300.0,
+      "saturated_fat": 3.0
+    },
+    "serving_size": 120,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "palamut-izgara",
+    "name": "Palamut (ızgara)",
+    "name_en": "Grilled bonito",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 144.0,
+      "protein": 25.0,
+      "carbs": 0.0,
+      "fat": 4.5,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 50.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ton-baligi-konserve-suda",
+    "name": "Ton balığı (konserve, suda)",
+    "name_en": "Canned tuna in water",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 116.0,
+      "protein": 26.0,
+      "carbs": 0.0,
+      "fat": 1.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 247.0,
+      "saturated_fat": 0.2
+    },
+    "serving_size": 80,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "karides-haslama",
+    "name": "Karides (haşlama)",
+    "name_en": "Boiled shrimp",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 99.0,
+      "protein": 21.0,
+      "carbs": 0.2,
+      "fat": 1.4,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 111.0,
+      "saturated_fat": 0.3
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "yumurta-haslanmis",
+    "name": "Yumurta (haşlanmış)",
+    "name_en": "Boiled egg",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 155.0,
+      "protein": 13.0,
+      "carbs": 1.1,
+      "fat": 11.0,
+      "fiber": 0.0,
+      "sugar": 1.1,
+      "sodium": 124.0,
+      "saturated_fat": 3.3
+    },
+    "serving_size": 50,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "yumurta-cirpilmis",
+    "name": "Yumurta (çırpılmış)",
+    "name_en": "Scrambled egg",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 148.0,
+      "protein": 10.0,
+      "carbs": 1.6,
+      "fat": 11.0,
+      "fiber": 0.0,
+      "sugar": 1.0,
+      "sodium": 166.0,
+      "saturated_fat": 3.0
+    },
+    "serving_size": 120,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "yumurta-aki",
+    "name": "Yumurta akı",
+    "name_en": "Egg white",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 52.0,
+      "protein": 11.0,
+      "carbs": 0.7,
+      "fat": 0.2,
+      "fiber": 0.0,
+      "sugar": 0.7,
+      "sodium": 166.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 33,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "yumurta-sarisi",
+    "name": "Yumurta sarısı",
+    "name_en": "Egg yolk",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 322.0,
+      "protein": 16.0,
+      "carbs": 3.6,
+      "fat": 27.0,
+      "fiber": 0.0,
+      "sugar": 0.6,
+      "sodium": 48.0,
+      "saturated_fat": 9.6
+    },
+    "serving_size": 17,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "sucuk-turk",
+    "name": "Sucuk (Türk)",
+    "name_en": "Turkish sausage (sucuk)",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 350.0,
+      "protein": 18.0,
+      "carbs": 2.0,
+      "fat": 30.0,
+      "fiber": 0.0,
+      "sugar": 1.0,
+      "sodium": 1100.0,
+      "saturated_fat": 12.0
+    },
+    "serving_size": 40,
+    "serving_unit": "dilim",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "salam",
+    "name": "Salam",
+    "name_en": "Salami",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 336.0,
+      "protein": 17.0,
+      "carbs": 2.0,
+      "fat": 28.0,
+      "fiber": 0.0,
+      "sugar": 1.0,
+      "sodium": 1500.0,
+      "saturated_fat": 10.0
+    },
+    "serving_size": 30,
+    "serving_unit": "dilim",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "sosis",
+    "name": "Sosis",
+    "name_en": "Sausage (hot dog)",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 300.0,
+      "protein": 13.0,
+      "carbs": 3.0,
+      "fat": 27.0,
+      "fiber": 0.0,
+      "sugar": 1.5,
+      "sodium": 950.0,
+      "saturated_fat": 10.0
+    },
+    "serving_size": 50,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kavurma",
+    "name": "Kavurma",
+    "name_en": "Kavurma (fried preserved meat)",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 320.0,
+      "protein": 22.0,
+      "carbs": 0.0,
+      "fat": 26.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 500.0,
+      "saturated_fat": 11.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dana-doner",
+    "name": "Dana döner",
+    "name_en": "Beef döner",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 230.0,
+      "protein": 20.0,
+      "carbs": 3.0,
+      "fat": 15.0,
+      "fiber": 0.3,
+      "sugar": 1.0,
+      "sodium": 450.0,
+      "saturated_fat": 6.0
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tavuk-doner",
+    "name": "Tavuk döner",
+    "name_en": "Chicken döner",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 215.0,
+      "protein": 22.0,
+      "carbs": 3.0,
+      "fat": 13.0,
+      "fiber": 0.3,
+      "sugar": 1.0,
+      "sodium": 420.0,
+      "saturated_fat": 3.5
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "izgara-kofte",
+    "name": "Izgara köfte",
+    "name_en": "Grilled meatball",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 250.0,
+      "protein": 20.0,
+      "carbs": 4.0,
+      "fat": 17.0,
+      "fiber": 0.5,
+      "sugar": 1.0,
+      "sodium": 380.0,
+      "saturated_fat": 7.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "inegol-kofte",
+    "name": "İnegöl köfte",
+    "name_en": "İnegöl meatball",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 270.0,
+      "protein": 19.0,
+      "carbs": 5.0,
+      "fat": 19.0,
+      "fiber": 0.5,
+      "sugar": 1.5,
+      "sodium": 400.0,
+      "saturated_fat": 8.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "adana-kebap",
+    "name": "Adana kebap",
+    "name_en": "Adana kebab",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 280.0,
+      "protein": 19.0,
+      "carbs": 3.0,
+      "fat": 21.0,
+      "fiber": 0.5,
+      "sugar": 1.0,
+      "sodium": 430.0,
+      "saturated_fat": 9.0
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "urfa-kebap",
+    "name": "Urfa kebap",
+    "name_en": "Urfa kebab",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 260.0,
+      "protein": 19.0,
+      "carbs": 3.0,
+      "fat": 19.0,
+      "fiber": 0.5,
+      "sugar": 1.0,
+      "sodium": 410.0,
+      "saturated_fat": 8.0
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "sis-kebap",
+    "name": "Şiş kebap",
+    "name_en": "Şiş kebab",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 220.0,
+      "protein": 24.0,
+      "carbs": 1.0,
+      "fat": 13.0,
+      "fiber": 0.2,
+      "sugar": 0.5,
+      "sodium": 380.0,
+      "saturated_fat": 5.0
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tavuk-sis",
+    "name": "Tavuk şiş",
+    "name_en": "Chicken şiş",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 180.0,
+      "protein": 27.0,
+      "carbs": 1.0,
+      "fat": 7.0,
+      "fiber": 0.2,
+      "sugar": 0.5,
+      "sodium": 360.0,
+      "saturated_fat": 2.0
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "balik-kofte",
+    "name": "Balık köfte",
+    "name_en": "Fish balls",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 190.0,
+      "protein": 18.0,
+      "carbs": 8.0,
+      "fat": 9.0,
+      "fiber": 0.5,
+      "sugar": 1.0,
+      "sodium": 400.0,
+      "saturated_fat": 2.0
+    },
+    "serving_size": 120,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "coban-kavurma",
+    "name": "Çoban kavurma",
+    "name_en": "Lamb and onion sauté",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 240.0,
+      "protein": 20.0,
+      "carbs": 4.0,
+      "fat": 16.0,
+      "fiber": 0.5,
+      "sugar": 1.5,
+      "sodium": 350.0,
+      "saturated_fat": 6.5
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "beyin-dana",
+    "name": "Beyin (dana)",
+    "name_en": "Beef brain",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 143.0,
+      "protein": 10.0,
+      "carbs": 0.5,
+      "fat": 11.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 126.0,
+      "saturated_fat": 2.5
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "iskembe",
+    "name": "İşkembe",
+    "name_en": "Tripe",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 96.0,
+      "protein": 15.0,
+      "carbs": 0.0,
+      "fat": 4.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 52.0,
+      "saturated_fat": 2.0
+    },
+    "serving_size": 200,
+    "serving_unit": "kase",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dil-dana",
+    "name": "Dil (dana)",
+    "name_en": "Beef tongue",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 224.0,
+      "protein": 16.0,
+      "carbs": 0.3,
+      "fat": 17.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 65.0,
+      "saturated_fat": 7.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "bobrek-dana",
+    "name": "Böbrek (dana)",
+    "name_en": "Beef kidney",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 99.0,
+      "protein": 17.0,
+      "carbs": 0.0,
+      "fat": 3.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 180.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kalp-tavuk",
+    "name": "Kalp (tavuk)",
+    "name_en": "Chicken heart",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 153.0,
+      "protein": 16.0,
+      "carbs": 0.7,
+      "fat": 9.3,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 53.0,
+      "saturated_fat": 2.5
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tavuk-cigeri",
+    "name": "Tavuk ciğeri",
+    "name_en": "Chicken liver",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 167.0,
+      "protein": 25.0,
+      "carbs": 0.9,
+      "fat": 6.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 71.0,
+      "saturated_fat": 2.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dana-antrikot-az-pismis",
+    "name": "Dana antrikot (az pişmiş)",
+    "name_en": "Beef ribeye (rare)",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 280.0,
+      "protein": 25.0,
+      "carbs": 0.0,
+      "fat": 20.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 58.0,
+      "saturated_fat": 8.5
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kuzu-tandir",
+    "name": "Kuzu tandır",
+    "name_en": "Lamb tandır (slow roasted)",
+    "brand": null,
+    "barcode": null,
+    "category": "protein",
+    "source": "ai",
+    "per_100g": {
+      "calories": 300.0,
+      "protein": 22.0,
+      "carbs": 0.0,
+      "fat": 23.0,
+      "fiber": 0.0,
+      "sugar": 0.0,
+      "sodium": 75.0,
+      "saturated_fat": 9.5
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "imam-bayildi",
+    "name": "İmam bayıldı",
+    "name_en": "Stuffed eggplant (olive oil)",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 120.0,
+      "protein": 2.0,
+      "carbs": 12.0,
+      "fat": 7.0,
+      "fiber": 3.0,
+      "sugar": 6.0,
+      "sodium": 320.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "turlu",
+    "name": "Türlü",
+    "name_en": "Mixed vegetable stew",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 90.0,
+      "protein": 2.5,
+      "carbs": 11.0,
+      "fat": 4.5,
+      "fiber": 3.0,
+      "sugar": 5.0,
+      "sodium": 300.0,
+      "saturated_fat": 0.7
+    },
+    "serving_size": 250,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "guvec-karisik",
+    "name": "Güveç (karışık)",
+    "name_en": "Mixed casserole",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 150.0,
+      "protein": 10.0,
+      "carbs": 10.0,
+      "fat": 8.0,
+      "fiber": 2.5,
+      "sugar": 4.0,
+      "sodium": 380.0,
+      "saturated_fat": 3.0
+    },
+    "serving_size": 250,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dolma-yaprak-zeytinyagli",
+    "name": "Dolma (yaprak, zeytinyağlı)",
+    "name_en": "Stuffed vine leaves (olive oil)",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 160.0,
+      "protein": 3.0,
+      "carbs": 20.0,
+      "fat": 8.0,
+      "fiber": 3.0,
+      "sugar": 2.0,
+      "sodium": 400.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "sarma-lahana-kiymali",
+    "name": "Sarma (lahana, kıymalı)",
+    "name_en": "Stuffed cabbage with minced meat",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 170.0,
+      "protein": 9.0,
+      "carbs": 14.0,
+      "fat": 9.0,
+      "fiber": 2.5,
+      "sugar": 3.0,
+      "sodium": 420.0,
+      "saturated_fat": 3.5
+    },
+    "serving_size": 200,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "karniyarik",
+    "name": "Karnıyarık",
+    "name_en": "Karnıyarık (stuffed eggplant with mince)",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 175.0,
+      "protein": 9.0,
+      "carbs": 11.0,
+      "fat": 11.0,
+      "fiber": 2.5,
+      "sugar": 5.0,
+      "sodium": 380.0,
+      "saturated_fat": 4.0
+    },
+    "serving_size": 250,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "musakka",
+    "name": "Musakka",
+    "name_en": "Moussaka",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 165.0,
+      "protein": 8.0,
+      "carbs": 10.0,
+      "fat": 10.0,
+      "fiber": 2.0,
+      "sugar": 4.0,
+      "sodium": 350.0,
+      "saturated_fat": 3.5
+    },
+    "serving_size": 250,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "hunkar-begendi",
+    "name": "Hünkar beğendi",
+    "name_en": "Hünkar beğendi (eggplant puree with meat)",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 200.0,
+      "protein": 10.0,
+      "carbs": 9.0,
+      "fat": 14.0,
+      "fiber": 1.5,
+      "sugar": 3.0,
+      "sodium": 380.0,
+      "saturated_fat": 6.0
+    },
+    "serving_size": 250,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat"
+    ],
+    "verified": false
+  },
+  {
+    "id": "coban-salatasi",
+    "name": "Çoban salatası",
+    "name_en": "Shepherd's salad",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 45.0,
+      "protein": 1.3,
+      "carbs": 6.0,
+      "fat": 2.0,
+      "fiber": 1.5,
+      "sugar": 3.0,
+      "sodium": 200.0,
+      "saturated_fat": 0.3
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "haydari",
+    "name": "Haydari",
+    "name_en": "Haydari (thick yogurt dip)",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 90.0,
+      "protein": 5.0,
+      "carbs": 4.0,
+      "fat": 6.0,
+      "fiber": 0.3,
+      "sugar": 3.0,
+      "sodium": 220.0,
+      "saturated_fat": 3.5
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "babaganus",
+    "name": "Babaganuş",
+    "name_en": "Baba ganoush",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 90.0,
+      "protein": 2.0,
+      "carbs": 7.0,
+      "fat": 6.0,
+      "fiber": 2.5,
+      "sugar": 3.0,
+      "sodium": 280.0,
+      "saturated_fat": 0.9
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "humus-ev-yapimi",
+    "name": "Humus (ev yapımı)",
+    "name_en": "Homemade hummus",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 166.0,
+      "protein": 8.0,
+      "carbs": 14.0,
+      "fat": 9.0,
+      "fiber": 6.0,
+      "sugar": 0.5,
+      "sodium": 240.0,
+      "saturated_fat": 1.3
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "tabbule",
+    "name": "Tabbule",
+    "name_en": "Tabbouleh",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 130.0,
+      "protein": 3.0,
+      "carbs": 17.0,
+      "fat": 6.0,
+      "fiber": 3.0,
+      "sugar": 1.5,
+      "sodium": 220.0,
+      "saturated_fat": 0.8
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "mercimek-koftesi",
+    "name": "Mercimek köftesi",
+    "name_en": "Lentil balls",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 145.0,
+      "protein": 5.0,
+      "carbs": 24.0,
+      "fat": 3.5,
+      "fiber": 4.0,
+      "sugar": 2.0,
+      "sodium": 280.0,
+      "saturated_fat": 0.5
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "kisir",
+    "name": "Kısır",
+    "name_en": "Kısır (bulgur salad)",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 160.0,
+      "protein": 4.0,
+      "carbs": 24.0,
+      "fat": 6.0,
+      "fiber": 3.5,
+      "sugar": 2.0,
+      "sodium": 300.0,
+      "saturated_fat": 0.8
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "manti-haslanmis-yogurtlu",
+    "name": "Mantı (haşlanmış, yoğurtlu)",
+    "name_en": "Boiled mantı with yogurt",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 220.0,
+      "protein": 9.0,
+      "carbs": 26.0,
+      "fat": 9.0,
+      "fiber": 1.5,
+      "sugar": 2.0,
+      "sodium": 350.0,
+      "saturated_fat": 3.5
+    },
+    "serving_size": 250,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "gozleme-ispanakli",
+    "name": "Gözleme (ıspanaklı)",
+    "name_en": "Spinach gözleme",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 220.0,
+      "protein": 7.0,
+      "carbs": 30.0,
+      "fat": 8.0,
+      "fiber": 2.5,
+      "sugar": 1.5,
+      "sodium": 420.0,
+      "saturated_fat": 3.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "pide-kiymali",
+    "name": "Pide (kıymalı)",
+    "name_en": "Pide with minced meat",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 260.0,
+      "protein": 12.0,
+      "carbs": 32.0,
+      "fat": 9.0,
+      "fiber": 2.0,
+      "sugar": 2.0,
+      "sodium": 500.0,
+      "saturated_fat": 3.5
+    },
+    "serving_size": 200,
+    "serving_unit": "adet",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "midye-dolma",
+    "name": "Midye dolma",
+    "name_en": "Stuffed mussels",
+    "brand": null,
+    "barcode": null,
+    "category": "hazir",
+    "source": "ai",
+    "per_100g": {
+      "calories": 180.0,
+      "protein": 6.0,
+      "carbs": 26.0,
+      "fat": 6.0,
+      "fiber": 1.5,
+      "sugar": 1.0,
+      "sodium": 450.0,
+      "saturated_fat": 1.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "leblebi-sari",
+    "name": "Leblebi (sarı)",
+    "name_en": "Roasted chickpeas (yellow)",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 380.0,
+      "protein": 20.0,
+      "carbs": 58.0,
+      "fat": 6.0,
+      "fiber": 10.0,
+      "sugar": 5.0,
+      "sodium": 15.0,
+      "saturated_fat": 0.6
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "yüksek protein",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "leblebi-beyaz",
+    "name": "Leblebi (beyaz)",
+    "name_en": "Roasted chickpeas (white)",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 350.0,
+      "protein": 18.0,
+      "carbs": 55.0,
+      "fat": 5.0,
+      "fiber": 9.0,
+      "sugar": 4.0,
+      "sodium": 15.0,
+      "saturated_fat": 0.5
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "cips-patates-sade",
+    "name": "Cips (patates, sade)",
+    "name_en": "Plain potato chips",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 536.0,
+      "protein": 6.5,
+      "carbs": 53.0,
+      "fat": 34.0,
+      "fiber": 4.0,
+      "sugar": 0.5,
+      "sodium": 525.0,
+      "saturated_fat": 11.0
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "popcorn-sade",
+    "name": "Popcorn (sade)",
+    "name_en": "Plain popcorn",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 387.0,
+      "protein": 12.0,
+      "carbs": 78.0,
+      "fat": 4.5,
+      "fiber": 14.5,
+      "sugar": 0.9,
+      "sodium": 8.0,
+      "saturated_fat": 0.6
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "misir-gevregi-sekersiz",
+    "name": "Mısır gevreği (şekersiz)",
+    "name_en": "Unsweetened corn flakes",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 357.0,
+      "protein": 7.0,
+      "carbs": 84.0,
+      "fat": 0.9,
+      "fiber": 3.0,
+      "sugar": 8.0,
+      "sodium": 660.0,
+      "saturated_fat": 0.2
+    },
+    "serving_size": 30,
+    "serving_unit": "kase",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "granola",
+    "name": "Granola",
+    "name_en": "Granola",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 471.0,
+      "protein": 10.0,
+      "carbs": 64.0,
+      "fat": 20.0,
+      "fiber": 7.0,
+      "sugar": 24.0,
+      "sodium": 130.0,
+      "saturated_fat": 4.0
+    },
+    "serving_size": 40,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "pirinc-keki-sade",
+    "name": "Pirinç keki (sade)",
+    "name_en": "Plain rice cake",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 387.0,
+      "protein": 8.2,
+      "carbs": 81.0,
+      "fat": 2.8,
+      "fiber": 4.2,
+      "sugar": 0.5,
+      "sodium": 10.0,
+      "saturated_fat": 0.5
+    },
+    "serving_size": 10,
+    "serving_unit": "adet",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "krakerler-tam-bugday",
+    "name": "Krakerler (tam buğday)",
+    "name_en": "Whole wheat crackers",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 420.0,
+      "protein": 10.0,
+      "carbs": 65.0,
+      "fat": 14.0,
+      "fiber": 8.0,
+      "sugar": 3.0,
+      "sodium": 600.0,
+      "saturated_fat": 2.5
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "biskuvi-sade",
+    "name": "Bisküvi (sade)",
+    "name_en": "Plain biscuits",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 440.0,
+      "protein": 7.0,
+      "carbs": 70.0,
+      "fat": 15.0,
+      "fiber": 2.0,
+      "sugar": 20.0,
+      "sodium": 380.0,
+      "saturated_fat": 6.0
+    },
+    "serving_size": 25,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "cikolata-bitter-70",
+    "name": "Çikolata (bitter %70)",
+    "name_en": "Dark chocolate 70%",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 598.0,
+      "protein": 7.8,
+      "carbs": 46.0,
+      "fat": 43.0,
+      "fiber": 11.0,
+      "sugar": 24.0,
+      "sodium": 6.0,
+      "saturated_fat": 25.0
+    },
+    "serving_size": 20,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "cikolata-sutlu",
+    "name": "Çikolata (sütlü)",
+    "name_en": "Milk chocolate",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 535.0,
+      "protein": 7.6,
+      "carbs": 59.0,
+      "fat": 30.0,
+      "fiber": 3.0,
+      "sugar": 52.0,
+      "sodium": 80.0,
+      "saturated_fat": 18.0
+    },
+    "serving_size": 20,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "gofret",
+    "name": "Gofret",
+    "name_en": "Wafer",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 510.0,
+      "protein": 6.0,
+      "carbs": 60.0,
+      "fat": 27.0,
+      "fiber": 1.5,
+      "sugar": 40.0,
+      "sodium": 150.0,
+      "saturated_fat": 14.0
+    },
+    "serving_size": 40,
+    "serving_unit": "adet",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "9-kat-findikli-gofret",
+    "name": "9 Kat Fındıklı Gofret",
+    "name_en": "9-layer hazelnut wafer",
+    "brand": "Ülker",
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 530.0,
+      "protein": 7.0,
+      "carbs": 58.0,
+      "fat": 30.0,
+      "fiber": 1.5,
+      "sugar": 42.0,
+      "sodium": 140.0,
+      "saturated_fat": 15.0
+    },
+    "serving_size": 40,
+    "serving_unit": "adet",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "browni",
+    "name": "Browni",
+    "name_en": "Brownie",
+    "brand": "Eti",
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 460.0,
+      "protein": 5.0,
+      "carbs": 55.0,
+      "fat": 24.0,
+      "fiber": 2.0,
+      "sugar": 35.0,
+      "sodium": 200.0,
+      "saturated_fat": 12.0
+    },
+    "serving_size": 40,
+    "serving_unit": "adet",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "halva-tahin",
+    "name": "Halva (tahin)",
+    "name_en": "Tahini halva",
+    "brand": null,
+    "barcode": null,
+    "category": "atistirma",
+    "source": "ai",
+    "per_100g": {
+      "calories": 480.0,
+      "protein": 10.0,
+      "carbs": 55.0,
+      "fat": 25.0,
+      "fiber": 3.0,
+      "sugar": 40.0,
+      "sodium": 60.0,
+      "saturated_fat": 5.0
+    },
+    "serving_size": 40,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "domates-taze",
+    "name": "Domates (taze)",
+    "name_en": "Fresh tomato",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 18.0,
+      "protein": 0.9,
+      "carbs": 3.9,
+      "fat": 0.2,
+      "fiber": 1.2,
+      "sugar": 2.6,
+      "sodium": 5.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "salatalik-taze",
+    "name": "Salatalık (taze)",
+    "name_en": "Fresh cucumber",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 15.0,
+      "protein": 0.7,
+      "carbs": 3.6,
+      "fat": 0.1,
+      "fiber": 0.5,
+      "sugar": 1.7,
+      "sodium": 2.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "biber-yesil-taze",
+    "name": "Biber (yeşil, taze)",
+    "name_en": "Fresh green pepper",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 20.0,
+      "protein": 0.9,
+      "carbs": 4.6,
+      "fat": 0.2,
+      "fiber": 1.7,
+      "sugar": 2.4,
+      "sodium": 3.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kirmizi-biber-taze",
+    "name": "Kırmızı biber (taze)",
+    "name_en": "Fresh red pepper",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 31.0,
+      "protein": 1.0,
+      "carbs": 6.0,
+      "fat": 0.3,
+      "fiber": 2.1,
+      "sugar": 4.2,
+      "sodium": 4.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "sogan-kuru",
+    "name": "Soğan (kuru)",
+    "name_en": "Dry onion",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 40.0,
+      "protein": 1.1,
+      "carbs": 9.3,
+      "fat": 0.1,
+      "fiber": 1.7,
+      "sugar": 4.2,
+      "sodium": 4.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 50,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ispanak-cig",
+    "name": "Ispanak (çiğ)",
+    "name_en": "Raw spinach",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 23.0,
+      "protein": 2.9,
+      "carbs": 3.6,
+      "fat": 0.4,
+      "fiber": 2.2,
+      "sugar": 0.4,
+      "sodium": 79.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 50,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "ispanak-haslanmis",
+    "name": "Ispanak (haşlanmış)",
+    "name_en": "Boiled spinach",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 23.0,
+      "protein": 2.9,
+      "carbs": 3.8,
+      "fat": 0.3,
+      "fiber": 2.4,
+      "sugar": 0.4,
+      "sodium": 24.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "pazi",
+    "name": "Pazı",
+    "name_en": "Swiss chard",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 19.0,
+      "protein": 1.8,
+      "carbs": 3.7,
+      "fat": 0.2,
+      "fiber": 1.6,
+      "sugar": 1.1,
+      "sodium": 213.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "lahana-beyaz",
+    "name": "Lahana (beyaz)",
+    "name_en": "White cabbage",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 25.0,
+      "protein": 1.3,
+      "carbs": 5.8,
+      "fat": 0.1,
+      "fiber": 2.5,
+      "sugar": 3.2,
+      "sodium": 18.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kirmizi-lahana",
+    "name": "Kırmızı lahana",
+    "name_en": "Red cabbage",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 31.0,
+      "protein": 1.4,
+      "carbs": 7.4,
+      "fat": 0.2,
+      "fiber": 2.1,
+      "sugar": 3.8,
+      "sodium": 27.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "brokoli-haslanmis",
+    "name": "Brokoli (haşlanmış)",
+    "name_en": "Boiled broccoli",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 35.0,
+      "protein": 2.4,
+      "carbs": 7.2,
+      "fat": 0.4,
+      "fiber": 3.3,
+      "sugar": 1.4,
+      "sodium": 41.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "karnabahar-haslanmis",
+    "name": "Karnabahar (haşlanmış)",
+    "name_en": "Boiled cauliflower",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 23.0,
+      "protein": 1.8,
+      "carbs": 4.1,
+      "fat": 0.5,
+      "fiber": 2.3,
+      "sugar": 1.3,
+      "sodium": 15.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "bezelye-dondurulmus-haslanmis",
+    "name": "Bezelye (dondurulmuş, haşlanmış)",
+    "name_en": "Boiled frozen peas",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 79.0,
+      "protein": 5.2,
+      "carbs": 14.0,
+      "fat": 0.4,
+      "fiber": 4.7,
+      "sugar": 4.0,
+      "sodium": 67.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "misir-taze-haslanmis",
+    "name": "Mısır (taze, haşlanmış)",
+    "name_en": "Boiled fresh corn",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 96.0,
+      "protein": 3.4,
+      "carbs": 21.0,
+      "fat": 1.5,
+      "fiber": 2.4,
+      "sugar": 4.5,
+      "sodium": 15.0,
+      "saturated_fat": 0.2
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "mantar-cig",
+    "name": "Mantar (çiğ)",
+    "name_en": "Raw mushroom",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 22.0,
+      "protein": 3.1,
+      "carbs": 3.3,
+      "fat": 0.3,
+      "fiber": 1.0,
+      "sugar": 2.0,
+      "sodium": 5.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "pirasa",
+    "name": "Pırasa",
+    "name_en": "Leek",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 61.0,
+      "protein": 1.5,
+      "carbs": 14.0,
+      "fat": 0.3,
+      "fiber": 1.8,
+      "sugar": 3.9,
+      "sodium": 20.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "enginar-haslanmis",
+    "name": "Enginar (haşlanmış)",
+    "name_en": "Boiled artichoke",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 47.0,
+      "protein": 3.3,
+      "carbs": 10.5,
+      "fat": 0.2,
+      "fiber": 5.4,
+      "sugar": 1.0,
+      "sodium": 296.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 120,
+    "serving_unit": "adet",
+    "tags": [
+      "düşük kalori",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kuskonmaz-haslanmis",
+    "name": "Kuşkonmaz (haşlanmış)",
+    "name_en": "Boiled asparagus",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 22.0,
+      "protein": 2.4,
+      "carbs": 4.1,
+      "fat": 0.2,
+      "fiber": 2.0,
+      "sugar": 1.3,
+      "sodium": 14.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "bamya-haslanmis",
+    "name": "Bamya (haşlanmış)",
+    "name_en": "Boiled okra",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 22.0,
+      "protein": 1.9,
+      "carbs": 4.5,
+      "fat": 0.1,
+      "fiber": 2.5,
+      "sugar": 1.5,
+      "sodium": 7.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "semizotu",
+    "name": "Semizotu",
+    "name_en": "Purslane",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 16.0,
+      "protein": 1.3,
+      "carbs": 3.4,
+      "fat": 0.1,
+      "fiber": 0.9,
+      "sugar": 1.5,
+      "sodium": 45.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 100,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "roka",
+    "name": "Roka",
+    "name_en": "Arugula",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 25.0,
+      "protein": 2.6,
+      "carbs": 3.7,
+      "fat": 0.7,
+      "fiber": 1.6,
+      "sugar": 2.0,
+      "sodium": 27.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "marul-yesil",
+    "name": "Marul (yeşil)",
+    "name_en": "Green lettuce",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 15.0,
+      "protein": 1.4,
+      "carbs": 2.9,
+      "fat": 0.2,
+      "fiber": 1.3,
+      "sugar": 0.8,
+      "sodium": 28.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 50,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "maydanoz",
+    "name": "Maydanoz",
+    "name_en": "Parsley",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 36.0,
+      "protein": 3.0,
+      "carbs": 6.3,
+      "fat": 0.8,
+      "fiber": 3.3,
+      "sugar": 0.9,
+      "sodium": 56.0,
+      "saturated_fat": 0.1
+    },
+    "serving_size": 10,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "dereotu",
+    "name": "Dereotu",
+    "name_en": "Dill",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 43.0,
+      "protein": 3.5,
+      "carbs": 7.0,
+      "fat": 1.1,
+      "fiber": 2.1,
+      "sugar": 0.0,
+      "sodium": 61.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 10,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  },
+  {
+    "id": "nane",
+    "name": "Nane",
+    "name_en": "Mint",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 70.0,
+      "protein": 3.8,
+      "carbs": 14.9,
+      "fat": 0.9,
+      "fiber": 8.0,
+      "sugar": 0.0,
+      "sodium": 31.0,
+      "saturated_fat": 0.2
+    },
+    "serving_size": 5,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük kalori",
+      "lif kaynağı"
+    ],
+    "verified": false
+  },
+  {
+    "id": "kuru-sogan-kizartilmis",
+    "name": "Kuru soğan (kızartılmış)",
+    "name_en": "Fried onion",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 180.0,
+      "protein": 2.0,
+      "carbs": 17.0,
+      "fat": 12.0,
+      "fiber": 2.0,
+      "sugar": 7.0,
+      "sodium": 10.0,
+      "saturated_fat": 2.0
+    },
+    "serving_size": 30,
+    "serving_unit": "porsiyon",
+    "tags": [],
+    "verified": false
+  },
+  {
+    "id": "taze-fasulye-haslanmis",
+    "name": "Taze fasulye (haşlanmış)",
+    "name_en": "Boiled green beans",
+    "brand": null,
+    "barcode": null,
+    "category": "sebze",
+    "source": "ai",
+    "per_100g": {
+      "calories": 35.0,
+      "protein": 1.9,
+      "carbs": 7.0,
+      "fat": 0.2,
+      "fiber": 3.2,
+      "sugar": 3.3,
+      "sodium": 6.0,
+      "saturated_fat": 0.0
+    },
+    "serving_size": 150,
+    "serving_unit": "porsiyon",
+    "tags": [
+      "düşük karbonhidrat",
+      "düşük kalori"
+    ],
+    "verified": false
+  }
+]

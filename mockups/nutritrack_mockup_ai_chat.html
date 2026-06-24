@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NutriTrack — AI Asistan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #090D0B; --s1: #111812; --s2: #182018; --s3: #1E2A1F;
+    --lime: #C8F076; --lime-d: #8FB84D; --lime-bg: rgba(200,240,118,0.10);
+    --text: #EEE9DC; --t2: #8A9488; --t3: #4A5449;
+    --bd: rgba(255,255,255,0.07); --bd2: rgba(255,255,255,0.12);
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+  .topbar { display: flex; align-items: center; gap: 10px; padding: 0 20px; height: 52px; border-bottom: 1px solid var(--bd); flex-shrink: 0; }
+  .tb-title { font-family: var(--serif); font-size: 16px; letter-spacing: -.02em; }
+  .tb-sub { font-size: 11px; color: var(--t3); }
+  .tb-sp { flex: 1; }
+  .chip { font-size: 11px; font-weight: 500; padding: 5px 12px; border-radius: 99px; border: 1px solid var(--bd2); color: var(--t2); background: transparent; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+  .chip svg { width: 13px; height: 13px; }
+
+  .body { display: flex; flex: 1; overflow: hidden; }
+
+  .sidebar { width: 60px; background: var(--s1); border-right: 1px solid var(--bd); display: flex; flex-direction: column; align-items: center; padding: 16px 0; gap: 4px; flex-shrink: 0; }
+  .logo { width: 34px; height: 34px; background: var(--lime); border-radius: 9px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+  .logo svg { width: 18px; height: 18px; }
+  .ni { width: 38px; height: 38px; border-radius: 9px; display: flex; align-items: center; justify-content: center; color: var(--t3); cursor: pointer; position: relative; }
+  .ni svg { width: 18px; height: 18px; }
+  .ni:hover { background: var(--s2); color: var(--t2); }
+  .ni.act { background: var(--lime-bg); color: var(--lime); }
+  .ni.act::before { content: ''; position: absolute; left: -1px; top: 50%; transform: translateY(-50%); width: 3px; height: 16px; background: var(--lime); border-radius: 0 3px 3px 0; }
+  .ni-sp { flex: 1; }
+
+  /* Chat sidebar */
+  .chat-sidebar { width: 220px; border-right: 1px solid var(--bd); display: flex; flex-direction: column; flex-shrink: 0; }
+  .cs-head { padding: 14px 16px; border-bottom: 1px solid var(--bd); }
+  .cs-title { font-size: 12px; font-weight: 500; color: var(--text); margin-bottom: 10px; }
+  .model-toggle { display: flex; background: var(--s2); border-radius: 8px; padding: 2px; gap: 2px; }
+  .mt-opt { flex: 1; padding: 5px 8px; border-radius: 6px; font-size: 11px; font-weight: 500; text-align: center; cursor: pointer; color: var(--t3); transition: all .15s; }
+  .mt-opt.act { background: var(--s3); color: var(--lime); }
+  .model-detail { font-size: 10px; color: var(--t3); margin-top: 8px; line-height: 1.6; }
+  .model-dot { display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--lime); margin-right: 4px; animation: pu 2s ease infinite; vertical-align: 1px; }
+  @keyframes pu { 0%,100%{opacity:1}50%{opacity:.3} }
+
+  .cs-hist { flex: 1; overflow-y: auto; padding: 8px 0; scrollbar-width: none; }
+  .cs-hist::-webkit-scrollbar { display: none; }
+  .hist-label { font-size: 9px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--t3); padding: 6px 16px 4px; }
+  .hist-item { padding: 7px 16px; font-size: 11px; color: var(--t2); cursor: pointer; transition: background .12s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hist-item:hover, .hist-item.act { background: var(--s2); }
+  .hist-item.act { color: var(--text); }
+
+  .cs-foot { padding: 12px 16px; border-top: 1px solid var(--bd); }
+  .new-chat-btn { width: 100%; padding: 7px; border-radius: 8px; border: 1px solid var(--bd2); background: transparent; font-size: 11px; color: var(--t2); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; font-family: var(--sans); transition: all .15s; }
+  .new-chat-btn svg { width: 14px; height: 14px; }
+  .new-chat-btn:hover { background: var(--s2); color: var(--text); }
+
+  /* Chat main */
+  .chat-main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+  .chat-messages { flex: 1; overflow-y: auto; padding: 20px 22px 12px; display: flex; flex-direction: column; gap: 18px; scrollbar-width: none; }
+  .chat-messages::-webkit-scrollbar { display: none; }
+
+  .msg { display: flex; gap: 11px; }
+  .msg-icon { width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+  .msg-icon svg { width: 14px; height: 14px; }
+  .msg-icon.ai { background: var(--lime-bg); border: 1px solid rgba(200,240,118,.2); color: var(--lime); }
+  .msg-icon.user { background: var(--s3); color: var(--t2); }
+  .msg-body { flex: 1; }
+  .msg-sender { font-size: 10px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--t3); margin-bottom: 6px; }
+  .msg-text { font-size: 13px; line-height: 1.7; color: var(--t2); }
+  .msg-text strong { color: var(--text); font-weight: 500; }
+  .msg-text .hi { color: var(--lime); font-weight: 500; }
+  .msg.user .msg-text { color: var(--text); }
+
+  .data-card { background: var(--s2); border: 1px solid var(--bd2); border-radius: 10px; padding: 12px 14px; margin-top: 12px; }
+  .dc-row { display: flex; justify-content: space-between; align-items: baseline; padding: 5px 0; border-bottom: 1px solid var(--bd); }
+  .dc-row:last-child { border-bottom: none; padding-top: 8px; }
+  .dc-label { font-size: 11px; color: var(--t3); }
+  .dc-val { font-size: 12px; font-weight: 500; color: var(--text); font-variant-numeric: tabular-nums; }
+  .dc-val.hi { color: var(--lime); }
+
+  .suggest-row { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+  .suggest-btn { font-size: 10px; padding: 4px 10px; border-radius: 99px; border: 1px solid var(--bd2); color: var(--t2); background: transparent; cursor: pointer; font-family: var(--sans); transition: all .12s; }
+  .suggest-btn:hover { border-color: var(--lime-d); color: var(--lime); }
+
+  /* Input */
+  .chat-input-wrap { padding: 12px 22px 16px; border-top: 1px solid var(--bd); flex-shrink: 0; }
+  .chat-input-box { background: var(--s2); border: 1px solid var(--bd2); border-radius: 10px; display: flex; align-items: center; gap: 10px; padding: 10px 14px; }
+  .attach-btn { color: var(--t3); cursor: pointer; flex-shrink: 0; display: flex; }
+  .attach-btn svg { width: 17px; height: 17px; }
+  .chat-input-box input { flex: 1; background: transparent; border: none; outline: none; font-size: 13px; color: var(--text); font-family: var(--sans); }
+  .chat-input-box input::placeholder { color: var(--t3); }
+  .send-btn { width: 32px; height: 32px; border-radius: 8px; background: var(--lime); display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; }
+  .send-btn svg { width: 14px; height: 14px; color: #080C0A; }
+  .chat-hint { font-size: 10px; color: var(--t3); text-align: center; margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="tb-title">AI Asistan</span>
+  <span class="tb-sub">— Qwen3:8b · yerel</span>
+  <div class="tb-sp"></div>
+  <button class="chip">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+    Haftalık rapor al
+  </button>
+</div>
+
+<div class="body">
+  <nav class="sidebar">
+    <div class="logo">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M10 2C6.5 2 4 5 4 8.5c0 4 3 7 6 9.5 3-2.5 6-5.5 6-9.5C16 5 13.5 2 10 2z" fill="#080C0A"/><path d="M10 6v8M7 9l3-3 3 3" stroke="#080C0A" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </div>
+    <div class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+    <div class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2a7 7 0 017 7H5a7 7 0 017-7z"/><path d="M5 9v2a7 7 0 0014 0V9"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="9" y1="22" x2="15" y2="22"/></svg></div>
+    <div class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg></div>
+    <div class="ni act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+    <div class="ni-sp"></div>
+    <div class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
+  </nav>
+
+  <!-- Chat sidebar -->
+  <div class="chat-sidebar">
+    <div class="cs-head">
+      <div class="cs-title">Model</div>
+      <div class="model-toggle">
+        <div class="mt-opt act">Yerel</div>
+        <div class="mt-opt">Claude</div>
+      </div>
+      <div class="model-detail"><span class="model-dot"></span>Qwen3:8b · çevrimdışı çalışıyor</div>
+    </div>
+    <div class="cs-hist">
+      <div class="hist-label">Bu hafta</div>
+      <div class="hist-item act">Akşam öğünü önerisi</div>
+      <div class="hist-item">Protein hedefi nasıl…</div>
+      <div class="hist-item">Haftalık özet — 2 Haz</div>
+      <div class="hist-label">Geçen hafta</div>
+      <div class="hist-item">Nohut kaç kalori?</div>
+      <div class="hist-item">Kilo hedefi hesabı</div>
+      <div class="hist-item">Mercimek tarifi</div>
+    </div>
+    <div class="cs-foot">
+      <button class="new-chat-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Yeni sohbet
+      </button>
+    </div>
+  </div>
+
+  <!-- Chat main -->
+  <div class="chat-main">
+    <div class="chat-messages">
+
+      <div class="msg">
+        <div class="msg-icon user">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="msg-body">
+          <div class="msg-sender">Sen</div>
+          <div class="msg-text">Bu akşam için ne önerirsin? Zaten 1.420 kcal yedim, 680 kcal kaldı. Protein biraz az, 78g'da kaldım.</div>
+        </div>
+      </div>
+
+      <div class="msg">
+        <div class="msg-icon ai">
+          <svg viewBox="0 0 20 20" fill="none"><path d="M10 2C6.5 2 4 5 4 8.5c0 4 3 7 6 9.5 3-2.5 6-5.5 6-9.5C16 5 13.5 2 10 2z" fill="currentColor" opacity=".6"/></svg>
+        </div>
+        <div class="msg-body">
+          <div class="msg-sender">NutriTrack AI</div>
+          <div class="msg-text">
+            Kalan kaloriye ve düşük proteine göre sana <strong>iki seçenek</strong> öneriyorum:<br><br>
+            <span class="hi">Seçenek A — Hafif ama doyurucu:</span> Izgara somon (150g) + buharda brokoli (200g) + 1 dilim tam buğday ekmek. Toplam yaklaşık <strong>480 kcal</strong>, <strong>38g protein</strong> getirir — günü <strong>116g protein</strong> ile kapatırsın.<br><br>
+            <span class="hi">Seçenek B — Daha pratik:</span> Yoğurt (200g) + haşlanmış yumurta (2 adet) + salatalık. Yaklaşık <strong>320 kcal</strong>, <strong>28g protein</strong>.
+          </div>
+          <div class="data-card">
+            <div class="dc-row"><span class="dc-label">Güncel protein</span><span class="dc-val">78g / 120g</span></div>
+            <div class="dc-row"><span class="dc-label">Seçenek A ile</span><span class="dc-val hi">116g ✓</span></div>
+            <div class="dc-row"><span class="dc-label">Kalan kalori</span><span class="dc-val">680 kcal</span></div>
+            <div class="dc-row"><span class="dc-label">Seçenek A kalori</span><span class="dc-val hi">~480 kcal</span></div>
+          </div>
+          <div class="suggest-row">
+            <button class="suggest-btn">Somon tarifi ver</button>
+            <button class="suggest-btn">Başka öneri</button>
+            <button class="suggest-btn">Listeye ekle</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="msg">
+        <div class="msg-icon user">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="msg-body">
+          <div class="msg-sender">Sen</div>
+          <div class="msg-text">Somon pişirmek istemiyorum, daha kolay bir şey?</div>
+        </div>
+      </div>
+
+      <div class="msg">
+        <div class="msg-icon ai">
+          <svg viewBox="0 0 20 20" fill="none"><path d="M10 2C6.5 2 4 5 4 8.5c0 4 3 7 6 9.5 3-2.5 6-5.5 6-9.5C16 5 13.5 2 10 2z" fill="currentColor" opacity=".6"/></svg>
+        </div>
+        <div class="msg-body">
+          <div class="msg-sender">NutriTrack AI</div>
+          <div class="msg-text">O zaman <span class="hi">yoğurt + yumurta + salata</span> (Seçenek B) mükemmel — 5 dakika, hiç pişirme yok. Yoğurt olarak <strong>süzme yoğurt</strong> seçersen protein daha da yükselir.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="chat-input-wrap">
+      <div class="chat-input-box">
+        <div class="attach-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg>
+        </div>
+        <input type="text" placeholder="Bir şey sor… "100g nohut kaç kalori?", "bu hafta nasıl gitti?"">
+        <div class="send-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+      </div>
+      <div class="chat-hint">Model: Qwen3:8b · yerel · internet bağlantısı gerekmez</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

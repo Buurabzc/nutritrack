@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NutriTrack — Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:        #090D0B;
+    --surface:   #111812;
+    --surface-2: #182018;
+    --surface-3: #1E2A1F;
+    --lime:      #C8F076;
+    --lime-dim:  #8FB84D;
+    --lime-glow: rgba(200,240,118,0.12);
+    --green-mid: #3D6B47;
+    --text:      #EEE9DC;
+    --text-2:    #8A9488;
+    --text-3:    #4A5449;
+    --border:    rgba(255,255,255,0.06);
+    --serif:     'DM Serif Display', Georgia, serif;
+    --sans:      'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    min-height: 100vh;
+    display: flex;
+  }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    width: 64px;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .logo-mark {
+    width: 36px;
+    height: 36px;
+    background: var(--lime);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .logo-mark svg { width: 20px; height: 20px; }
+
+  .nav-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-3);
+    cursor: pointer;
+    transition: all 0.15s;
+    position: relative;
+  }
+
+  .nav-icon:hover { background: var(--surface-2); color: var(--text-2); }
+  .nav-icon.active { background: var(--lime-glow); color: var(--lime); }
+  .nav-icon.active::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 20px;
+    background: var(--lime);
+    border-radius: 0 3px 3px 0;
+  }
+
+  .nav-icon svg { width: 18px; height: 18px; }
+  .sidebar-spacer { flex: 1; }
+
+  /* ── Main layout ── */
+  .main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 56px 1fr;
+    overflow: hidden;
+  }
+
+  /* ── Topbar ── */
+  .topbar {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--border);
+    gap: 12px;
+  }
+
+  .topbar-title {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
+
+  .topbar-date {
+    font-size: 12px;
+    color: var(--text-3);
+    margin-left: 2px;
+  }
+
+  .topbar-spacer { flex: 1; }
+
+  .chip {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 99px;
+    border: 1px solid var(--border);
+    color: var(--text-2);
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+  }
+
+  .chip:hover { border-color: var(--text-3); color: var(--text); }
+
+  .chip-primary {
+    background: var(--lime);
+    color: #0A0F0D;
+    border-color: var(--lime);
+    font-weight: 600;
+  }
+
+  .chip-primary:hover { background: #d9ff88; }
+
+  .chip svg { width: 13px; height: 13px; }
+
+  /* ── Left panel ── */
+  .left-panel {
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .panel-section {
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    margin-bottom: 16px;
+  }
+
+  /* ── Tube calorie indicator ── */
+  .tube-wrap {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .tube-outer {
+    width: 28px;
+    height: 110px;
+    background: var(--surface-2);
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .tube-fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, var(--lime), #8FD44A);
+    border-radius: 14px;
+    transition: height 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: rise 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  @keyframes rise {
+    from { height: 0%; }
+    to { height: 68%; }
+  }
+
+  .tube-glow {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    height: 68%;
+    background: radial-gradient(ellipse at 50% 30%, rgba(200,240,118,0.3) 0%, transparent 70%);
+    border-radius: 14px;
+    pointer-events: none;
+  }
+
+  .tube-info { flex: 1; }
+
+  .tube-big {
+    font-family: var(--serif);
+    font-size: 44px;
+    line-height: 1;
+    color: var(--lime);
+    letter-spacing: -0.03em;
+  }
+
+  .tube-unit {
+    font-size: 13px;
+    color: var(--text-2);
+    margin-top: 2px;
+  }
+
+  .tube-sub {
+    font-size: 12px;
+    color: var(--text-3);
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+
+  .tube-sub b { color: var(--text-2); font-weight: 500; }
+
+  /* ── Macro bars ── */
+  .macro-list { display: flex; flex-direction: column; gap: 12px; }
+
+  .macro-row { display: flex; flex-direction: column; gap: 5px; }
+
+  .macro-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .macro-name { font-size: 12px; color: var(--text-2); }
+
+  .macro-val {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .macro-track {
+    height: 4px;
+    background: var(--surface-3);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+
+  .macro-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 0.8s ease;
+  }
+
+  /* ── Meal list ── */
+  .meal-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 20px;
+    scrollbar-width: none;
+  }
+
+  .meal-scroll::-webkit-scrollbar { display: none; }
+
+  .meal-group-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    margin-bottom: 8px;
+    margin-top: 16px;
+  }
+
+  .meal-group-label:first-child { margin-top: 0; }
+
+  .meal-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.12s;
+    margin-bottom: 2px;
+  }
+
+  .meal-item:hover { background: var(--surface-2); }
+
+  .meal-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .meal-name {
+    font-size: 13px;
+    color: var(--text);
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .meal-g {
+    font-size: 11px;
+    color: var(--text-3);
+  }
+
+  .meal-kcal {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-2);
+    font-variant-numeric: tabular-nums;
+    min-width: 52px;
+    text-align: right;
+  }
+
+  .meal-add {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px dashed var(--border);
+    font-size: 12px;
+    color: var(--text-3);
+    cursor: pointer;
+    margin-top: 6px;
+    transition: all 0.15s;
+  }
+
+  .meal-add:hover { border-color: var(--text-3); color: var(--text-2); }
+
+  /* ── Right panel ── */
+  .right-panel {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    overflow: hidden;
+    background: var(--bg);
+  }
+
+  .right-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    overflow: hidden;
+  }
+
+  .quad {
+    background: var(--bg);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quad-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    margin-bottom: 16px;
+  }
+
+  /* ── Week chart ── */
+  .week-bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    flex: 1;
+    padding-bottom: 4px;
+  }
+
+  .day-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+  }
+
+  .day-bar-wrap {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    max-height: 90px;
+  }
+
+  .day-bar {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    min-height: 4px;
+    transition: height 0.6s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .day-bar::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 40%;
+    background: rgba(255,255,255,0.08);
+  }
+
+  .day-bar.today { background: var(--lime) !important; }
+  .day-bar.past { background: var(--surface-3); }
+  .day-bar.over { background: #B85C38; }
+
+  .day-label {
+    font-size: 9px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-3);
+  }
+
+  .day-label.today-label { color: var(--lime); font-weight: 600; }
+
+  /* ── AI card ── */
+  .ai-bubble {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 12.5px;
+    line-height: 1.65;
+    color: var(--text-2);
+    flex: 1;
+  }
+
+  .ai-bubble strong { color: var(--lime); font-weight: 500; }
+
+  .ai-prompt-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .ai-input {
+    flex: 1;
+    background: var(--surface-3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-size: 12px;
+    color: var(--text-2);
+    font-family: var(--sans);
+    outline: none;
+  }
+
+  .ai-send {
+    width: 30px;
+    height: 30px;
+    background: var(--lime);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .ai-send svg { width: 14px; height: 14px; color: #0A0F0D; }
+
+  .model-badge {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--lime-dim);
+    background: rgba(200,240,118,0.08);
+    border: 1px solid rgba(200,240,118,0.15);
+    padding: 3px 8px;
+    border-radius: 99px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .model-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--lime);
+    animation: pulse 2s ease infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* ── Body stats ── */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex: 1;
+  }
+
+  .stat-tile {
+    background: var(--surface-2);
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .stat-tile-label { font-size: 10px; color: var(--text-3); margin-bottom: 4px; }
+
+  .stat-tile-val {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--text);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .stat-tile-unit { font-size: 11px; color: var(--text-3); font-family: var(--sans); }
+
+  .stat-tile-delta {
+    font-size: 10px;
+    color: var(--lime);
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  .stat-tile-delta.neg { color: #B85C38; }
+
+  /* ── Water ── */
+  .water-track {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: flex-start;
+    padding-top: 4px;
+  }
+
+  .water-cup {
+    width: 28px;
+    height: 36px;
+    border-radius: 4px 4px 6px 6px;
+    border: 1.5px solid var(--surface-3);
+    background: var(--surface-2);
+    cursor: pointer;
+    transition: all 0.15s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .water-cup.filled { border-color: #3B8ED4; background: rgba(59,142,212,0.2); }
+  .water-cup.filled::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 70%;
+    background: linear-gradient(to top, #3B8ED4, #6AAEE8);
+    border-radius: 0 0 4px 4px;
+  }
+
+  .water-cup:hover:not(.filled) { border-color: var(--text-3); }
+
+  .water-label {
+    font-size: 11px;
+    color: var(--text-3);
+    margin-top: 10px;
+  }
+
+  /* ── Bottom bar ── */
+  .bottom-bar {
+    border-top: 1px solid var(--border);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--surface);
+  }
+
+  .streak-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-2);
+  }
+
+  .streak-num {
+    font-family: var(--serif);
+    font-size: 20px;
+    color: var(--lime);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .divider-v {
+    width: 1px;
+    height: 20px;
+    background: var(--border);
+  }
+
+  .sync-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--text-3);
+    margin-left: auto;
+  }
+
+  .sync-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--lime);
+  }
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="sidebar" aria-label="Ana navigasyon">
+  <div class="logo-mark" aria-label="NutriTrack">
+    <svg viewBox="0 0 20 20" fill="none">
+      <path d="M10 2C6.5 2 4 5 4 8.5c0 4 3 7 6 9.5 3-2.5 6-5.5 6-9.5C16 5 13.5 2 10 2z" fill="#0A0F0D"/>
+      <path d="M10 6v8M7 9l3-3 3 3" stroke="#0A0F0D" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="nav-icon active" title="Dashboard">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+      <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+      <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+      <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+    </svg>
+  </div>
+  <!-- Öğünler -->
+  <div class="nav-icon" title="Öğünler">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <path d="M12 2a7 7 0 017 7H5a7 7 0 017-7z"/>
+      <path d="M5 9v2a7 7 0 0014 0V9"/>
+      <line x1="12" y1="19" x2="12" y2="22"/>
+      <line x1="9" y1="22" x2="15" y2="22"/>
+    </svg>
+  </div>
+  <!-- Plan -->
+  <div class="nav-icon" title="Haftalık Plan">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <rect x="3" y="4" width="18" height="18" rx="2"/>
+      <line x1="3" y1="9" x2="21" y2="9"/>
+      <line x1="8" y1="2" x2="8" y2="6"/>
+      <line x1="16" y1="2" x2="16" y2="6"/>
+    </svg>
+  </div>
+  <!-- AI -->
+  <div class="nav-icon" title="AI Asistan">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <path d="M12 2a8 8 0 018 8c0 3-1.5 5.5-4 7l-4 5-4-5C5.5 15.5 4 13 4 10a8 8 0 018-8z"/>
+      <circle cx="12" cy="10" r="2.5"/>
+    </svg>
+  </div>
+
+  <div class="sidebar-spacer"></div>
+
+  <!-- Vücut -->
+  <div class="nav-icon" title="Vücut Takibi">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <path d="M12 2a3 3 0 100 6 3 3 0 000-6z"/>
+      <path d="M6.5 8.5C5 10 4 12 4 14h4v7h8v-7h4c0-2-1-4-2.5-5.5"/>
+    </svg>
+  </div>
+  <!-- Ayarlar -->
+  <div class="nav-icon" title="Ayarlar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="12" cy="12" r="3"/>
+      <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/>
+    </svg>
+  </div>
+</nav>
+
+<!-- Main -->
+<div class="main">
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <span class="topbar-title">Dashboard</span>
+    <span class="topbar-date">— Pazartesi, 9 Haziran</span>
+    <div class="topbar-spacer"></div>
+    <button class="chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Besin ara
+    </button>
+    <button class="chip chip-primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      Öğün ekle
+    </button>
+  </header>
+
+  <!-- Left panel -->
+  <aside class="left-panel">
+
+    <!-- Kalori -->
+    <div class="panel-section">
+      <div class="section-label">Bugünkü kalori</div>
+      <div class="tube-wrap">
+        <div class="tube-outer" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" aria-label="Kalori doluluk oranı">
+          <div class="tube-fill"></div>
+          <div class="tube-glow"></div>
+        </div>
+        <div class="tube-info">
+          <div class="tube-big">1.420</div>
+          <div class="tube-unit">kcal tüketildi</div>
+          <div class="tube-sub">
+            <b>680 kcal</b> kaldı<br>
+            Hedef: <b>2.100 kcal</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Makrolar -->
+    <div class="panel-section">
+      <div class="section-label">Makrolar</div>
+      <div class="macro-list">
+        <div class="macro-row">
+          <div class="macro-head">
+            <span class="macro-name">Protein</span>
+            <span class="macro-val">78 <span style="color:var(--text-3);font-weight:400">/ 120g</span></span>
+          </div>
+          <div class="macro-track">
+            <div class="macro-fill" style="width:65%;background:var(--lime)"></div>
+          </div>
+        </div>
+        <div class="macro-row">
+          <div class="macro-head">
+            <span class="macro-name">Karbonhidrat</span>
+            <span class="macro-val">142 <span style="color:var(--text-3);font-weight:400">/ 240g</span></span>
+          </div>
+          <div class="macro-track">
+            <div class="macro-fill" style="width:59%;background:#5B9FE0"></div>
+          </div>
+        </div>
+        <div class="macro-row">
+          <div class="macro-head">
+            <span class="macro-name">Yağ</span>
+            <span class="macro-val">44 <span style="color:var(--text-3);font-weight:400">/ 70g</span></span>
+          </div>
+          <div class="macro-track">
+            <div class="macro-fill" style="width:63%;background:#D48B44"></div>
+          </div>
+        </div>
+        <div class="macro-row">
+          <div class="macro-head">
+            <span class="macro-name">Lif</span>
+            <span class="macro-val">18 <span style="color:var(--text-3);font-weight:400">/ 30g</span></span>
+          </div>
+          <div class="macro-track">
+            <div class="macro-fill" style="width:60%;background:#9B82D8"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Öğünler -->
+    <div class="meal-scroll">
+      <div class="meal-group-label">Kahvaltı · 08:30</div>
+      <div class="meal-item">
+        <div class="meal-dot" style="background:#D4A843"></div>
+        <span class="meal-name">Yumurta (haşlanmış)</span>
+        <span class="meal-g">2 adet</span>
+        <span class="meal-kcal">156 kcal</span>
+      </div>
+      <div class="meal-item">
+        <div class="meal-dot" style="background:#D4A843"></div>
+        <span class="meal-name">Beyaz peynir</span>
+        <span class="meal-g">50g</span>
+        <span class="meal-kcal">134 kcal</span>
+      </div>
+      <div class="meal-item">
+        <div class="meal-dot" style="background:#D4A843"></div>
+        <span class="meal-name">Tam buğday ekmek</span>
+        <span class="meal-g">2 dilim</span>
+        <span class="meal-kcal">160 kcal</span>
+      </div>
+
+      <div class="meal-group-label">Öğle · 12:45</div>
+      <div class="meal-item">
+        <div class="meal-dot" style="background:var(--lime)"></div>
+        <span class="meal-name">Mercimek çorbası</span>
+        <span class="meal-g">1 kase</span>
+        <span class="meal-kcal">200 kcal</span>
+      </div>
+      <div class="meal-item">
+        <div class="meal-dot" style="background:var(--lime)"></div>
+        <span class="meal-name">Tavuk göğsü</span>
+        <span class="meal-g">150g</span>
+        <span class="meal-kcal">248 kcal</span>
+      </div>
+      <div class="meal-item">
+        <div class="meal-dot" style="background:var(--lime)"></div>
+        <span class="meal-name">Bulgur pilavı</span>
+        <span class="meal-g">100g</span>
+        <span class="meal-kcal">150 kcal</span>
+      </div>
+
+      <div class="meal-group-label">Atıştırma · 15:00</div>
+      <div class="meal-item">
+        <div class="meal-dot" style="background:#9B82D8"></div>
+        <span class="meal-name">Fındık karışımı</span>
+        <span class="meal-g">30g</span>
+        <span class="meal-kcal">185 kcal</span>
+      </div>
+      <div class="meal-item">
+        <div class="meal-dot" style="background:#9B82D8"></div>
+        <span class="meal-name">Elma</span>
+        <span class="meal-g">1 orta</span>
+        <span class="meal-kcal">80 kcal</span>
+      </div>
+
+      <div class="meal-group-label" style="color:var(--text-3);opacity:0.6">Akşam · henüz eklenmedi</div>
+      <div class="meal-add">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Akşam yemeği ekle
+      </div>
+    </div>
+  </aside>
+
+  <!-- Right panel -->
+  <div class="right-panel">
+    <div class="right-top">
+
+      <!-- Q1: Haftalık kalori -->
+      <div class="quad">
+        <div class="quad-label">Bu hafta</div>
+        <div class="week-bars" role="img" aria-label="Haftalık kalori çubuğu grafiği">
+          <div class="day-col">
+            <div class="day-bar-wrap"><div class="day-bar past" style="height:78%"></div></div>
+            <span class="day-label">Pzt</span>
+          </div>
+          <div class="day-col">
+            <div class="day-bar-wrap"><div class="day-bar past" style="height:91%"></div></div>
+            <span class="day-label">Sal</span>
+          </div>
+          <div class="day-col">
+            <div class="day-bar-wrap"><div class="day-bar past" style="height:58%"></div></div>
+            <span class="day-label">Çar</span>
+          </div>
+          <div class="day-col">
+            <div class="day-bar-wrap"><div class="day-bar past" style="height:81%"></div></div>
+            <span class="day-label">Per</span>
+          </div>
+          <div class="day-col">
+            <div class="day-bar-wrap"><div class="day-bar over" style="height:100%"></div></div>
+            <span class="day-label">Cum</span>
+          </div>
+          <div class="day-col">
+            <div class="day-bar-wrap"><div class="day-bar today" style="height:46%"></div></div>
+            <span class="day-label today-label">Cmt</span>
+          </div>
+          <div class="day-col">
+            <div class="day-bar-wrap" style="height:90px"></div>
+            <span class="day-label">Paz</span>
+          </div>
+        </div>
+        <div style="margin-top:10px;display:flex;gap:12px">
+          <span style="font-size:11px;color:var(--text-3)">Ort. <span style="color:var(--text-2);font-weight:500">2.086 kcal</span></span>
+          <span style="font-size:11px;color:#B85C38">▲ Cum fazla</span>
+        </div>
+      </div>
+
+      <!-- Q2: AI Asistan -->
+      <div class="quad">
+        <div class="quad-label">AI Asistan</div>
+        <div class="model-badge">
+          <div class="model-dot"></div>
+          Qwen3:8b — yerel
+        </div>
+        <div class="ai-bubble">
+          Bu hafta ortalamanı iyi tutuyorsun. <strong>Cuma</strong> biraz taştı ama genel denge güzel. Akşam için hafif bir seçenek öneririm — ıspanaklı yumurta veya yoğurt + meyve hedefini kapatır.
+        </div>
+        <div class="ai-prompt-row">
+          <input class="ai-input" type="text" placeholder="Bir şey sor… "100g nohut kaç protein?"">
+          <div class="ai-send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3: Vücut ölçüsü -->
+      <div class="quad">
+        <div class="quad-label">Vücut takibi</div>
+        <div class="stat-grid">
+          <div class="stat-tile">
+            <div class="stat-tile-label">Ağırlık</div>
+            <div class="stat-tile-val">78<span class="stat-tile-unit">.4 kg</span></div>
+            <div class="stat-tile-delta">−1.6 kg hedeften bu yana</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-tile-label">BMI</div>
+            <div class="stat-tile-val">24<span class="stat-tile-unit">.1</span></div>
+            <div class="stat-tile-delta">Normal aralık</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-tile-label">Hedef</div>
+            <div class="stat-tile-val">74<span class="stat-tile-unit"> kg</span></div>
+            <div class="stat-tile-delta" style="color:var(--text-3)">4.4 kg kaldı</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-tile-label">Bel</div>
+            <div class="stat-tile-val">84<span class="stat-tile-unit"> cm</span></div>
+            <div class="stat-tile-delta neg">−2 cm son aya göre</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4: Su takibi -->
+      <div class="quad">
+        <div class="quad-label">Su — 1.4 / 2.5 lt</div>
+        <div class="water-track" role="group" aria-label="Su bardağı takibi">
+          <div class="water-cup filled" title="250ml içildi"></div>
+          <div class="water-cup filled" title="250ml içildi"></div>
+          <div class="water-cup filled" title="250ml içildi"></div>
+          <div class="water-cup filled" title="250ml içildi"></div>
+          <div class="water-cup filled" title="250ml içildi"></div>
+          <div class="water-cup" title="250ml daha iç"></div>
+          <div class="water-cup" title="250ml daha iç"></div>
+          <div class="water-cup" title="250ml daha iç"></div>
+          <div class="water-cup" title="250ml daha iç"></div>
+          <div class="water-cup" title="250ml daha iç"></div>
+        </div>
+        <div class="water-label">Her bardak 250ml · 5/10 tamamlandı</div>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="bottom-bar">
+      <div class="streak-pill">
+        <span class="streak-num">12</span>
+        <span style="font-size:11px;color:var(--text-3);line-height:1.3">gün<br>seri</span>
+        <span style="margin-left:2px">🔥</span>
+      </div>
+      <div class="divider-v"></div>
+      <span style="font-size:12px;color:var(--text-3)">Hedef modu: <span style="color:var(--text-2)">Kilo ver · −0.5 kg/hafta</span></span>
+      <div class="divider-v"></div>
+      <span style="font-size:12px;color:var(--text-3)">TDEE <span style="color:var(--text-2)">2.340 kcal</span></span>
+      <div class="sync-status">
+        <div class="sync-dot"></div>
+        Syncthing · eşitlendi 2dk önce
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

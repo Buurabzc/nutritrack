@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NutriTrack — Haftalık Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #090D0B; --s1: #111812; --s2: #182018; --s3: #1E2A1F;
+    --lime: #C8F076; --lime-d: #8FB84D; --lime-bg: rgba(200,240,118,0.10);
+    --text: #EEE9DC; --t2: #8A9488; --t3: #4A5449;
+    --bd: rgba(255,255,255,0.07); --bd2: rgba(255,255,255,0.12);
+    --red: #C96B4A; --blue: #5B9FE0; --purple: #9B82D8; --amber: #D4A843;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+  .topbar { display: flex; align-items: center; gap: 10px; padding: 0 20px; height: 52px; border-bottom: 1px solid var(--bd); flex-shrink: 0; }
+  .tb-title { font-family: var(--serif); font-size: 16px; letter-spacing: -.02em; }
+  .tb-sp { flex: 1; }
+  .chip { font-size: 11px; font-weight: 500; padding: 5px 12px; border-radius: 99px; border: 1px solid var(--bd2); color: var(--t2); background: transparent; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+  .chip svg { width: 13px; height: 13px; }
+  .chip-p { background: var(--lime); color: #080C0A; border-color: var(--lime); font-weight: 600; }
+
+  .body { display: flex; flex: 1; overflow: hidden; }
+
+  .sidebar { width: 60px; background: var(--s1); border-right: 1px solid var(--bd); display: flex; flex-direction: column; align-items: center; padding: 16px 0; gap: 4px; flex-shrink: 0; }
+  .logo { width: 34px; height: 34px; background: var(--lime); border-radius: 9px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+  .logo svg { width: 18px; height: 18px; }
+  .ni { width: 38px; height: 38px; border-radius: 9px; display: flex; align-items: center; justify-content: center; color: var(--t3); cursor: pointer; position: relative; }
+  .ni svg { width: 18px; height: 18px; }
+  .ni:hover { background: var(--s2); color: var(--t2); }
+  .ni.act { background: var(--lime-bg); color: var(--lime); }
+  .ni.act::before { content: ''; position: absolute; left: -1px; top: 50%; transform: translateY(-50%); width: 3px; height: 16px; background: var(--lime); border-radius: 0 3px 3px 0; }
+  .ni-sp { flex: 1; }
+
+  .plan-wrap { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+  .plan-nav { display: flex; align-items: center; gap: 10px; padding: 12px 20px; border-bottom: 1px solid var(--bd); flex-shrink: 0; }
+  .nav-btn { width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--bd2); background: transparent; display: flex; align-items: center; justify-content: center; color: var(--t2); cursor: pointer; }
+  .nav-btn svg { width: 15px; height: 15px; }
+  .week-label { font-size: 13px; font-weight: 500; }
+  .pn-sp { flex: 1; }
+  .plan-stat { font-size: 11px; color: var(--t3); }
+  .plan-stat b { color: var(--t2); font-weight: 500; }
+
+  .grid-wrap { flex: 1; overflow: auto; padding: 16px 20px; }
+
+  .plan-grid {
+    display: grid;
+    grid-template-columns: 68px repeat(7, 1fr);
+    gap: 1px;
+    background: var(--bd);
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 640px;
+  }
+
+  .gh-corner, .gh-day, .gl-label { background: var(--s1); }
+  .gc { background: var(--s2); }
+
+  .gh-corner { padding: 12px 8px; }
+  .gh-day { padding: 12px 10px 10px; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .gd-name { font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--t3); }
+  .gd-num { font-size: 20px; font-family: var(--serif); color: var(--text); line-height: 1; letter-spacing: -.02em; }
+  .gd-num.today { color: var(--lime); }
+  .gd-kcal { font-size: 9px; color: var(--t3); }
+  .gd-kcal.over { color: var(--red); }
+
+  .gl-label { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 10px 6px; }
+  .gl-label svg { width: 15px; height: 15px; color: var(--t3); }
+  .gl-label span { font-size: 9px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--t3); text-align: center; line-height: 1.3; }
+
+  .gc { padding: 6px; min-height: 70px; cursor: pointer; transition: background .12s; position: relative; }
+  .gc:hover { background: var(--s3); }
+  .gc.today-col { background: rgba(200,240,118,.04); }
+
+  .mc { border-radius: 6px; padding: 5px 7px; margin-bottom: 3px; }
+  .mc-name { font-size: 10px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mc-kcal { font-size: 9px; opacity: .65; margin-top: 1px; }
+  .mc-y { background: rgba(212,168,67,.18); color: var(--amber); }
+  .mc-g { background: rgba(200,240,118,.14); color: var(--lime-d); }
+  .mc-b { background: rgba(91,159,224,.18); color: var(--blue); }
+  .mc-p { background: rgba(155,130,216,.18); color: var(--purple); }
+
+  .gc-empty { display: flex; align-items: center; justify-content: center; height: 100%; color: var(--t3); opacity: 0; }
+  .gc-empty svg { width: 14px; height: 14px; }
+  .gc:hover .gc-empty { opacity: 1; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="tb-title">Haftalık Plan</span>
+  <div class="tb-sp"></div>
+  <button class="chip">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2a8 8 0 018 8c0 3-1.5 5.5-4 7l-4 5-4-5C5.5 15.5 4 13 4 10a8 8 0 018-8z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    AI ile plan oluştur
+  </button>
+  <button class="chip chip-p">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    Öğün ekle
+  </button>
+</div>
+
+<div class="body">
+  <nav class="sidebar">
+    <div class="logo">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M10 2C6.5 2 4 5 4 8.5c0 4 3 7 6 9.5 3-2.5 6-5.5 6-9.5C16 5 13.5 2 10 2z" fill="#080C0A"/><path d="M10 6v8M7 9l3-3 3 3" stroke="#080C0A" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </div>
+    <div class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+    <div class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2a7 7 0 017 7H5a7 7 0 017-7z"/><path d="M5 9v2a7 7 0 0014 0V9"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="9" y1="22" x2="15" y2="22"/></svg></div>
+    <div class="ni act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg></div>
+    <div class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2a8 8 0 018 8c0 3-1.5 5.5-4 7l-4 5-4-5C5.5 15.5 4 13 4 10a8 8 0 018-8z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+    <div class="ni-sp"></div>
+    <div class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
+  </nav>
+
+  <div class="plan-wrap">
+    <div class="plan-nav">
+      <div class="nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></div>
+      <span class="week-label">2–8 Haziran 2025</span>
+      <div class="nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></div>
+      <div class="pn-sp"></div>
+      <div class="plan-stat">Ort. <b>2.086 kcal</b> · <span style="color:var(--red)">Cum fazla</span></div>
+    </div>
+
+    <div class="grid-wrap">
+      <div class="plan-grid">
+        <div class="gh-corner"></div>
+        <div class="gh-day"><span class="gd-name">Pzt</span><span class="gd-num">2</span><span class="gd-kcal">2.080</span></div>
+        <div class="gh-day"><span class="gd-name">Sal</span><span class="gd-num">3</span><span class="gd-kcal">2.210</span></div>
+        <div class="gh-day"><span class="gd-name">Çar</span><span class="gd-num">4</span><span class="gd-kcal">1.890</span></div>
+        <div class="gh-day"><span class="gd-name">Per</span><span class="gd-num">5</span><span class="gd-kcal">2.050</span></div>
+        <div class="gh-day"><span class="gd-name">Cum</span><span class="gd-num">6</span><span class="gd-kcal over">2.340 ↑</span></div>
+        <div class="gh-day"><span class="gd-name" style="color:var(--lime)">Cmt</span><span class="gd-num today">7</span><span class="gd-kcal">1.420</span></div>
+        <div class="gh-day"><span class="gd-name">Paz</span><span class="gd-num">8</span><span class="gd-kcal" style="color:var(--t3)">—</span></div>
+
+        <!-- Kahvaltı -->
+        <div class="gl-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg><span>Kahvaltı</span></div>
+        <div class="gc"><div class="mc mc-y"><div class="mc-name">Yumurta + peynir</div><div class="mc-kcal">290 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-y"><div class="mc-name">Yulaf + muz</div><div class="mc-kcal">340 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-y"><div class="mc-name">Menemen</div><div class="mc-kcal">310 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-y"><div class="mc-name">Yumurta + ekmek</div><div class="mc-kcal">280 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-y"><div class="mc-name">Börek + ayran</div><div class="mc-kcal">420 kcal</div></div></div>
+        <div class="gc today-col"><div class="mc mc-y"><div class="mc-name">Yumurta + peynir</div><div class="mc-kcal">290 kcal</div></div></div>
+        <div class="gc"><div class="gc-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+
+        <!-- Öğle -->
+        <div class="gl-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Öğle</span></div>
+        <div class="gc"><div class="mc mc-g"><div class="mc-name">Mercimek çorbası</div><div class="mc-kcal">520 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-g"><div class="mc-name">Tavuk + bulgur</div><div class="mc-kcal">580 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-g"><div class="mc-name">Nohutlu pilav</div><div class="mc-kcal">490 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-g"><div class="mc-name">Izgara köfte</div><div class="mc-kcal">540 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-g"><div class="mc-name">Lahmacun x2</div><div class="mc-kcal">680 kcal</div></div></div>
+        <div class="gc today-col"><div class="mc mc-g"><div class="mc-name">Tavuk + bulgur</div><div class="mc-kcal">580 kcal</div></div></div>
+        <div class="gc"><div class="gc-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+
+        <!-- Akşam -->
+        <div class="gl-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><span>Akşam</span></div>
+        <div class="gc"><div class="mc mc-b"><div class="mc-name">Balık + salata</div><div class="mc-kcal">420 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-b"><div class="mc-name">Kuru fasulye</div><div class="mc-kcal">480 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-b"><div class="mc-name">Etli sebze</div><div class="mc-kcal">390 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-b"><div class="mc-name">Makarna + sos</div><div class="mc-kcal">520 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-b"><div class="mc-name">Pizza (2 dilim)</div><div class="mc-kcal">620 kcal</div></div></div>
+        <div class="gc today-col"><div class="gc-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+        <div class="gc"><div class="gc-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+
+        <!-- Atıştırma -->
+        <div class="gl-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Atıştırma</span></div>
+        <div class="gc"><div class="mc mc-p"><div class="mc-name">Elma + fındık</div><div class="mc-kcal">200 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-p"><div class="mc-name">Yoğurt</div><div class="mc-kcal">95 kcal</div></div></div>
+        <div class="gc"><div class="gc-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+        <div class="gc"><div class="mc mc-p"><div class="mc-name">Ceviz + muz</div><div class="mc-kcal">210 kcal</div></div></div>
+        <div class="gc"><div class="mc mc-p"><div class="mc-name">Kek + çay</div><div class="mc-kcal">320 kcal</div></div></div>
+        <div class="gc today-col"><div class="mc mc-p"><div class="mc-name">Fındık + elma</div><div class="mc-kcal">185 kcal</div></div></div>
+        <div class="gc"><div class="gc-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

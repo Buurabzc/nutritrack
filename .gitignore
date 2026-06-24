@@ -1,0 +1,34 @@
+# Firebase (artık kullanılmıyor)
+.firebase/
+
+# Environment
+frontend/.env.local
+frontend/.env.*.local
+backend/.env
+backend/firebase-service-account.json
+
+# Database
+backend/nutritrack.db
+backend/nutritrack.db-shm
+backend/nutritrack.db-wal
+
+# Build output
+frontend/dist/
+frontend/node_modules/
+
+# Python
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/routers/__pycache__/
+backend/app/services/__pycache__/
+backend/app/services/ai/__pycache__/
+backend/.venv/
+backend/venv/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Misc
+.DS_Store
+*.log

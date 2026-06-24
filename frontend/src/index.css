@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:        #090D0B;
+  --surface-1: #111812;
+  --surface-2: #182018;
+  --surface-3: #1E2A1F;
+  --lime:      #C8F076;
+  --lime-dim:  #8FB84D;
+  --lime-bg:   rgba(200,240,118, 0.10);
+  --text:      #EEE9DC;
+  --text-1:    #EEE9DC;
+  --text-2:    #8A9488;
+  --text-3:    #4A5449;
+  --border:    rgba(255,255,255, 0.07);
+  --border-2:  rgba(255,255,255, 0.12);
+  --red:    #C96B4A;
+  --blue:   #5B9FE0;
+  --purple: #9B82D8;
+  --amber:  #D4A843;
+  --nav-h:  60px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  height: 100%;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+#root {
+  height: 100dvh;
+  display: flex;
+}
+
+* { scrollbar-width: none; }
+*::-webkit-scrollbar { display: none; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type=number] { -moz-appearance: textfield; }
+
+/* ── Mobile layout + iOS Safe Area ── */
+@media (max-width: 768px) {
+  body { overflow: hidden; }
+  #root {
+    /* --vvh: useViewport() hook'u tarafından window.visualViewport.height
+       ile güncellenir. Klavye açılınca 100dvh değişmez ama --vvh küçülür,
+       böylece içerik her zaman görünür alana sığar. */
+    height: var(--vvh, 100dvh);
+    overflow: hidden;
+    /* Notch / Dynamic Island için padding */
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    box-sizing: border-box;
+  }
+}
+
+@keyframes rise {
+  from { height: 0% }
+  to   { height: var(--fill-pct, 0%) }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1 }
+  50% { opacity: 0.3 }
+}
+
+@keyframes bounce-dot {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes waterwave {
+  0%   { transform: translateX(0) }
+  100% { transform: translateX(-50%) }
+}
+
+@keyframes msgIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg) }
+  to   { transform: rotate(360deg) }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%) }
+  to   { transform: translateY(0) }
+}
