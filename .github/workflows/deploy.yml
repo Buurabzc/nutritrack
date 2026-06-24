@@ -29,6 +29,7 @@ jobs:
         working-directory: frontend
         env:
           VITE_API_URL: ${{ vars.VITE_API_URL }}
+          VITE_BASE_PATH: /nutritrack/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

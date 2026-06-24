@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 import { VitePWA } from 'vite-plugin-pwa'
 
-export default defineConfig({
+export default defineConfig(() => ({
+  base: process.env.VITE_BASE_PATH || '/',
   plugins: [
     react(),
     VitePWA({
@@ -43,4 +44,4 @@ export default defineConfig({
       '/api': 'http://localhost:8000',
     },
   },
-})
+}))

@@ -12,6 +12,15 @@
     <title>NutriTrack</title>
   </head>
   <body>
+    <script>
+      (function() {
+        var p = window.location.search.match(/[?&]p=([^&]*)/);
+        if (p) {
+          var path = p[1].replace(/~and~/g, '&');
+          window.history.replaceState(null, null, '/' + path + (window.location.hash || ''));
+        }
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
